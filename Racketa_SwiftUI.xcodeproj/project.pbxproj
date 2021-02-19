@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */; };
+		11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */; };
+		11BA6C7025DEE6AB000E0580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */; };
+		11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C7825DEF84A000E0580 /* EditableText.swift */; };
+		11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C7D25DF1337000E0580 /* CodeView.swift */; };
+		11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84325E0641B006EEADC /* TextBindingManager.swift */; };
+		11C7C84825E064A2006EEADC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84725E064A2006EEADC /* Extension.swift */; };
+		11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racketa_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11BA6C7125DEE6AB000E0580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BA6C7825DEF84A000E0580 /* EditableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
+		11BA6C7D25DF1337000E0580 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		11C7C84325E0641B006EEADC /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
+		11C7C84725E064A2006EEADC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Racketa_SwiftUIApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BA6C6225DEE6A8000E0580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BA6C5C25DEE6A8000E0580 = {
+			isa = PBXGroup;
+			children = (
+				11BA6C6725DEE6A8000E0580 /* Racketa_SwiftUI */,
+				11BA6C6625DEE6A8000E0580 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11BA6C6625DEE6A8000E0580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11BA6C6725DEE6A8000E0580 /* Racketa_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
+				11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */,
+				11BA6C7D25DF1337000E0580 /* CodeView.swift */,
+				11BA6C7825DEF84A000E0580 /* EditableText.swift */,
+				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
+				11C7C84725E064A2006EEADC /* Extension.swift */,
+				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
+				11BA6C7125DEE6AB000E0580 /* Info.plist */,
+				11BA6C6E25DEE6AB000E0580 /* Preview Content */,
+			);
+			path = Racketa_SwiftUI;
+			sourceTree = "<group>";
+		};
+		11BA6C6E25DEE6AB000E0580 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11BA6C6425DEE6A8000E0580 /* Racketa_SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BA6C7425DEE6AB000E0580 /* Build configuration list for PBXNativeTarget "Racketa_SwiftUI" */;
+			buildPhases = (
+				11BA6C6125DEE6A8000E0580 /* Sources */,
+				11BA6C6225DEE6A8000E0580 /* Frameworks */,
+				11BA6C6325DEE6A8000E0580 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Racketa_SwiftUI;
+			productName = Racketa_SwiftUI;
+			productReference = 11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BA6C5D25DEE6A8000E0580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					11BA6C6425DEE6A8000E0580 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 11BA6C6025DEE6A8000E0580 /* Build configuration list for PBXProject "Racketa_SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11BA6C5C25DEE6A8000E0580;
+			productRefGroup = 11BA6C6625DEE6A8000E0580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11BA6C6425DEE6A8000E0580 /* Racketa_SwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BA6C6325DEE6A8000E0580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BA6C7025DEE6AB000E0580 /* Preview Assets.xcassets in Resources */,
+				11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11BA6C6125DEE6A8000E0580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
+				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
+				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
+				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
+				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
+				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11BA6C7225DEE6AB000E0580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11BA6C7325DEE6AB000E0580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11BA6C7525DEE6AB000E0580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Racketa_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 97H3L3NWGN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Racketa_SwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-145tttSaOg.Racketa-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11BA6C7625DEE6AB000E0580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Racketa_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 97H3L3NWGN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Racketa_SwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-145tttSaOg.Racketa-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11BA6C6025DEE6A8000E0580 /* Build configuration list for PBXProject "Racketa_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BA6C7225DEE6AB000E0580 /* Debug */,
+				11BA6C7325DEE6AB000E0580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BA6C7425DEE6AB000E0580 /* Build configuration list for PBXNativeTarget "Racketa_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BA6C7525DEE6AB000E0580 /* Debug */,
+				11BA6C7625DEE6AB000E0580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BA6C5D25DEE6A8000E0580 /* Project object */;
+}
