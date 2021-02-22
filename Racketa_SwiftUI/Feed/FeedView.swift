@@ -33,13 +33,13 @@ struct FeedView: View {
             }
             ScrollView {
                 ProjectView()
-                    .padding(.vertical, 10)
+                    .padding(10)
                 ProjectView()
-                    .padding(.vertical, 10)
+                    .padding(10)
                 ProjectView()
-                    .padding(.vertical, 10)
+                    .padding(10)
                 ProjectView()
-                    .padding(.vertical, 10)
+                    .padding(10)
             }
         }
     }

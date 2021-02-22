@@ -14,7 +14,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             if selected == 0 {
-                Text("FirstView")
+                FeedView()
             } else if selected == 1 {
                 Text("SecondView")
             } else {
