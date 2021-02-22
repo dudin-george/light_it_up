@@ -28,7 +28,7 @@ struct AuthorizationView: View {
                             Text("Регистрация")
                                 .font(Font.system(size: 24))
                                 .bold()
-                            Text("На ваш номер телфона придет код для подтверждения регистрации")
+                            Text("На ваш номер телефона придет код для подтверждения регистрации")
                             
                         }
                             .foregroundColor(.white)

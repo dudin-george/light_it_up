@@ -11,7 +11,7 @@ import SwiftUI
 struct Racketa_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthorizationView()
+            FeedView()
         }
     }
 }

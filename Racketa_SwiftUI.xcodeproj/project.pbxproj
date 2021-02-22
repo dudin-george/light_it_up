@@ -15,6 +15,12 @@
 		11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84325E0641B006EEADC /* TextBindingManager.swift */; };
 		11C7C84825E064A2006EEADC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84725E064A2006EEADC /* Extension.swift */; };
 		11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */; };
+		11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87D25E3D869006EEADC /* FeedView.swift */; };
+		11C7C88225E3D87B006EEADC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88125E3D87B006EEADC /* MainView.swift */; };
+		11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */; };
+		11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88A25E42DA8006EEADC /* ProjectView.swift */; };
+		11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */; };
+		11C7C89525E43725006EEADC /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89425E43725006EEADC /* Project.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		11C7C84325E0641B006EEADC /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
 		11C7C84725E064A2006EEADC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Racketa_SwiftUIApp.swift; sourceTree = "<group>"; };
+		11C7C87D25E3D869006EEADC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		11C7C88125E3D87B006EEADC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		11C7C88A25E42DA8006EEADC /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHalfRectangle.swift; sourceTree = "<group>"; };
+		11C7C89425E43725006EEADC /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +73,13 @@
 			isa = PBXGroup;
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
-				11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */,
-				11BA6C7D25DF1337000E0580 /* CodeView.swift */,
-				11BA6C7825DEF84A000E0580 /* EditableText.swift */,
+				11C7C88125E3D87B006EEADC /* MainView.swift */,
+				11C7C87C25E3D800006EEADC /* Feed */,
+				11C7C87A25E3D7AE006EEADC /* Authorization */,
+				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
+				11C7C88D25E43305006EEADC /* Shapes */,
 				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
+				11C7C89325E4370C006EEADC /* Model */,
 				11C7C84725E064A2006EEADC /* Extension.swift */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
 				11BA6C7125DEE6AB000E0580 /* Info.plist */,
@@ -79,6 +94,41 @@
 				11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11C7C87A25E3D7AE006EEADC /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */,
+				11BA6C7D25DF1337000E0580 /* CodeView.swift */,
+				11BA6C7825DEF84A000E0580 /* EditableText.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		11C7C87C25E3D800006EEADC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C87D25E3D869006EEADC /* FeedView.swift */,
+				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		11C7C88D25E43305006EEADC /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		11C7C89325E4370C006EEADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C89425E43725006EEADC /* Project.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,12 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */,
+				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
+				11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
 				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
+				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
 				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
 				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
+				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
+				11C7C89525E43725006EEADC /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
