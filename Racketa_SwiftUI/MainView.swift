@@ -24,7 +24,7 @@ struct MainView: View {
             CustomTabBar.init(selected: self.$selected)
                 .padding()
                 .padding(.horizontal, 32)
-                .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 94, cornerRadius: 30, rotationDegree: 180, backgroundColor: Color.black))
+                .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 93, cornerRadius: 36, rotationDegree: 180, backgroundColor: Color.black))
         }
     }
     

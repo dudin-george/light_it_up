@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CustomTabBar: View {
+    
+    let fontName: String = "Proxima Nova"
+    
     @Binding var selected: Int
     
     var body: some View {
@@ -16,6 +19,7 @@ struct CustomTabBar: View {
                 self.selected = 0
             }) {
                 Text("Лента")
+                    .bold()
             }.foregroundColor(self.selected == 0 ? .blue : .gray)
             
             Spacer(minLength: 12)
@@ -24,6 +28,7 @@ struct CustomTabBar: View {
                 self.selected = 1
             }) {
                 Text("Проекты")
+                    .bold()
             }.foregroundColor(self.selected == 1 ? .blue : .gray)
             
             Spacer(minLength: 12)
@@ -32,8 +37,11 @@ struct CustomTabBar: View {
                 self.selected = 2
             }) {
                 Text("Профиль")
-            }.foregroundColor(self.selected == 2 ? .blue : .gray)
-        }.font(Font.system(size: 10))
+                    .bold()
+            }
+            .foregroundColor(self.selected == 2 ? .blue : .gray)
+        }
+        .font(Font.custom(fontName, size: 10))
     }
     
 }

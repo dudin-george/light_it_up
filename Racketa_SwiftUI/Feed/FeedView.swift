@@ -9,37 +9,41 @@ import SwiftUI
 
 struct FeedView: View {
     
+    let fontName: String = "Proxima Nova"
+    
+    @ObservedObject var viewModel = ProjectFeedManager()
     @State var selectedView = 0
     
     var body: some View {
-        VStack{
+        VStack(spacing: 0){
             HStack(spacing: 34) {
                 Button(action: {
                     self.selectedView = 0
                 }) {
                     Text("Подписки")
                         .bold()
-                        .font(Font.system(size: 18))
+                        .font(Font.custom(fontName, size: 18))
                         
                 }.foregroundColor(self.selectedView == 0 ? .black : .gray)
+
                 
                 Button(action: {
                     self.selectedView = 1
                 }) {
                     Text("Интересное")
                         .bold()
-                        .font(Font.system(size: 18))
+                        .font(Font.custom(fontName, size: 18))
+                    
                 }.foregroundColor(self.selectedView == 1 ? .black : .gray)
             }
+            .padding(.top, 20)
+            .padding(.bottom, 21)
             ScrollView {
-                ProjectView()
-                    .padding(10)
-                ProjectView()
-                    .padding(10)
-                ProjectView()
-                    .padding(10)
-                ProjectView()
-                    .padding(10)
+                ForEach(viewModel.projects) { project in
+                    ProjectView(project: project)
+                        .padding(.bottom, 10.5)
+                        .padding(.horizontal, 7)
+                }
             }
         }
     }

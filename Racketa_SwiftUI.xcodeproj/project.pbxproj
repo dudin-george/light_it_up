@@ -21,6 +21,14 @@
 		11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88A25E42DA8006EEADC /* ProjectView.swift */; };
 		11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */; };
 		11C7C89525E43725006EEADC /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89425E43725006EEADC /* Project.swift */; };
+		11C7C89A25E6C0E6006EEADC /* ProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */; };
+		11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */; };
+		11C7C8AA25E81AE0006EEADC /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */; };
+		11C7C8AC25E81AE5006EEADC /* ProximaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */; };
+		11C7C8AE25E81AFD006EEADC /* ProximaNova-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A625E8160E006EEADC /* ProximaNova-Light.ttf */; };
+		11C7C8B025E81B00006EEADC /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A725E81626006EEADC /* ProximaNova-Regular.ttf */; };
+		11C7C8B225E81B04006EEADC /* ProximaNova-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */; };
+		11C7C8B525E823C0006EEADC /* ProximaNova-Extrabld.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,14 @@
 		11C7C88A25E42DA8006EEADC /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHalfRectangle.swift; sourceTree = "<group>"; };
 		11C7C89425E43725006EEADC /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFeedManager.swift; sourceTree = "<group>"; };
+		11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.ttf"; sourceTree = "<group>"; };
+		11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
+		11C7C8A625E8160E006EEADC /* ProximaNova-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.ttf"; sourceTree = "<group>"; };
+		11C7C8A725E81626006EEADC /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
+		11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
+		11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,7 @@
 				11C7C84725E064A2006EEADC /* Extension.swift */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
 				11BA6C7125DEE6AB000E0580 /* Info.plist */,
+				11C7C8A225E815B8006EEADC /* fonts */,
 				11BA6C6E25DEE6AB000E0580 /* Preview Content */,
 			);
 			path = Racketa_SwiftUI;
@@ -111,6 +128,7 @@
 			children = (
 				11C7C87D25E3D869006EEADC /* FeedView.swift */,
 				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
+				11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -126,9 +144,23 @@
 		11C7C89325E4370C006EEADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		11C7C8A225E815B8006EEADC /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */,
+				11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */,
+				11C7C8A725E81626006EEADC /* ProximaNova-Regular.ttf */,
+				11C7C8A625E8160E006EEADC /* ProximaNova-Light.ttf */,
+				11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */,
+				11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +220,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C7C8AE25E81AFD006EEADC /* ProximaNova-Light.ttf in Resources */,
 				11BA6C7025DEE6AB000E0580 /* Preview Assets.xcassets in Resources */,
+				11C7C8B025E81B00006EEADC /* ProximaNova-Regular.ttf in Resources */,
+				11C7C8B525E823C0006EEADC /* ProximaNova-Extrabld.ttf in Resources */,
+				11C7C8B225E81B04006EEADC /* ProximaNova-Black.ttf in Resources */,
 				11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */,
+				11C7C8AC25E81AE5006EEADC /* ProximaNova-Bold.ttf in Resources */,
+				11C7C8AA25E81AE0006EEADC /* ProximaNova-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +242,8 @@
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
 				11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
+				11C7C89A25E6C0E6006EEADC /* ProjectFeedManager.swift in Sources */,
+				11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */,
 				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
