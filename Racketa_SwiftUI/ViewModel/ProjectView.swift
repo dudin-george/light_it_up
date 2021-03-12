@@ -22,9 +22,10 @@ struct ProjectView: View {
             Image(project.imageName)
                 .resizable()
                 .scaledToFill()
-                .frame(width: width, height: height)
+                .frame(width: width, height: height - 1, alignment: .top)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
                 .shadow(color: Color.init(#colorLiteral(red: 0.6990006345, green: 0.6990006345, blue: 0.6990006345, alpha: 0.5)), radius: 4, x: 0, y: 4)
+                .padding(.bottom, 1)
             VStack {
                 Spacer()
                 ZStack(alignment: .bottom) {
@@ -48,7 +49,6 @@ struct ProjectView: View {
                         Spacer()
                         Button(action: {
                             print("This project id is - ", project.id)
-                            print(UIFont.fontNames(forFamilyName: fontName))
                         }) {
                             Text("Открыть")
                                 .bold()

@@ -17,8 +17,9 @@ struct ProjectManager {
     }
     
     func fetchProject(type: String) -> [Project] {
+        let k = type == "Feed" ? 5 : 3
         var projects: [Project] = []
-        for i in 0..<5 {
+        for i in 0..<k {
             projects.append(Project(id: i, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"))
         }
         return projects

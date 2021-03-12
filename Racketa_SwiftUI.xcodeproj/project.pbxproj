@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
+		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
+		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
+		113BC13025EFF3F90076AEDC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12F25EFF3F90076AEDC /* DetailView.swift */; };
+		113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13225EFFBFB0076AEDC /* CalendarView.swift */; };
+		113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13625F0137D0076AEDC /* ToDoView.swift */; };
+		113BC13A25F015B30076AEDC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13925F015B30076AEDC /* Event.swift */; };
+		11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EF4C25F8106B001075D4 /* TeemView.swift */; };
 		11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */; };
 		11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */; };
 		11BA6C7025DEE6AB000E0580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */; };
@@ -32,6 +40,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
+		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
+		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		113BC12F25EFF3F90076AEDC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		113BC13225EFFBFB0076AEDC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		113BC13625F0137D0076AEDC /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		113BC13925F015B30076AEDC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		11A6EF4C25F8106B001075D4 /* TeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeemView.swift; sourceTree = "<group>"; };
 		11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racketa_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +85,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113BC12125EFBD420076AEDC /* myProjectFeed */ = {
+			isa = PBXGroup;
+			children = (
+				113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */,
+				113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */,
+				113BC12F25EFF3F90076AEDC /* DetailView.swift */,
+				113BC13625F0137D0076AEDC /* ToDoView.swift */,
+				11A6EF4C25F8106B001075D4 /* TeemView.swift */,
+			);
+			path = myProjectFeed;
+			sourceTree = "<group>";
+		};
+		113BC12625EFBDA60076AEDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
+				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
+				11C7C88D25E43305006EEADC /* Shapes */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		11BA6C5C25DEE6A8000E0580 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +128,12 @@
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
+				113BC12125EFBD420076AEDC /* myProjectFeed */,
 				11C7C87C25E3D800006EEADC /* Feed */,
 				11C7C87A25E3D7AE006EEADC /* Authorization */,
 				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
-				11C7C88D25E43305006EEADC /* Shapes */,
 				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
+				113BC12625EFBDA60076AEDC /* ViewModel */,
 				11C7C89325E4370C006EEADC /* Model */,
 				11C7C84725E064A2006EEADC /* Extension.swift */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
@@ -127,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				11C7C87D25E3D869006EEADC /* FeedView.swift */,
-				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
 				11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */,
 			);
 			path = Feed;
@@ -146,6 +184,8 @@
 			children = (
 				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
+				113BC12C25EFF2950076AEDC /* Person.swift */,
+				113BC13925F015B30076AEDC /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */,
+				113BC13025EFF3F90076AEDC /* DetailView.swift in Sources */,
+				113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */,
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
 				11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
@@ -248,10 +290,16 @@
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
+				113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */,
 				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
+				113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */,
 				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
 				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
+				11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */,
+				113BC12D25EFF2950076AEDC /* Person.swift in Sources */,
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,
+				113BC13A25F015B30076AEDC /* Event.swift in Sources */,
+				113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
