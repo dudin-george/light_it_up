@@ -13,6 +13,7 @@ struct RoundedHalfRectangle: View {
     var cornerRadius: CGFloat
     var rotationDegree: Double
     var backgroundColor: Color
+    var shadow = false
     
     var body: some View {
         Path { path in
@@ -26,5 +27,6 @@ struct RoundedHalfRectangle: View {
         }.rotation(.init(degrees: rotationDegree))
         .fill(backgroundColor)
         .ignoresSafeArea()
+        .shadow(color: shadow ? Color.init(#colorLiteral(red: 0.6990006345, green: 0.6990006345, blue: 0.6990006345, alpha: 0.5)) : Color.white, radius: 4, x: 0, y: 4)
     }
 }

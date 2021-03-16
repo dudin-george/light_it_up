@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1113720B2601400000FE9AAA /* FeedSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720A2601400000FE9AAA /* FeedSwipeView.swift */; };
+		1113720F260145E200FE9AAA /* ProjectViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720E260145E200FE9AAA /* ProjectViewNew.swift */; };
 		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
 		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
 		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1113720A2601400000FE9AAA /* FeedSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSwipeView.swift; sourceTree = "<group>"; };
+		1113720E260145E200FE9AAA /* ProjectViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewNew.swift; sourceTree = "<group>"; };
 		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
 		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
 		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -85,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1113720726013F5E00FE9AAA /* old */ = {
+			isa = PBXGroup;
+			children = (
+				11C7C87C25E3D800006EEADC /* Feed */,
+				113BC12125EFBD420076AEDC /* myProjectFeed */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		1113720926013FC300FE9AAA /* newFeed */ = {
+			isa = PBXGroup;
+			children = (
+				1113720A2601400000FE9AAA /* FeedSwipeView.swift */,
+			);
+			path = newFeed;
+			sourceTree = "<group>";
+		};
 		113BC12125EFBD420076AEDC /* myProjectFeed */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +121,7 @@
 		113BC12625EFBDA60076AEDC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1113720E260145E200FE9AAA /* ProjectViewNew.swift */,
 				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
 				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
 				11C7C88D25E43305006EEADC /* Shapes */,
@@ -128,14 +150,14 @@
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
-				113BC12125EFBD420076AEDC /* myProjectFeed */,
-				11C7C87C25E3D800006EEADC /* Feed */,
+				1113720926013FC300FE9AAA /* newFeed */,
 				11C7C87A25E3D7AE006EEADC /* Authorization */,
 				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
 				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
 				113BC12625EFBDA60076AEDC /* ViewModel */,
 				11C7C89325E4370C006EEADC /* Model */,
 				11C7C84725E064A2006EEADC /* Extension.swift */,
+				1113720726013F5E00FE9AAA /* old */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
 				11BA6C7125DEE6AB000E0580 /* Info.plist */,
 				11C7C8A225E815B8006EEADC /* fonts */,
@@ -286,8 +308,10 @@
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
 				11C7C89A25E6C0E6006EEADC /* ProjectFeedManager.swift in Sources */,
 				11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */,
+				1113720B2601400000FE9AAA /* FeedSwipeView.swift in Sources */,
 				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
+				1113720F260145E200FE9AAA /* ProjectViewNew.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
 				113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */,
