@@ -9,11 +9,15 @@ import SwiftUI
 import UIKit
 struct ProjectViewNew: View {
     
+    //высота экрана которая по сути при измение его перерисовывает
+    @State var height: CGFloat = UIScreen.main.bounds.height - 274
+    
     let project: Project
     
     private let width = UIScreen.main.bounds.width - 75
     private let cornerRadius: CGFloat = 26
-    private let height: CGFloat = UIScreen.main.bounds.height - 274
+    
+    
     private let imageHeight: CGFloat = 194
     private let fontName: String = "Proxima Nova"
     
@@ -28,9 +32,7 @@ struct ProjectViewNew: View {
                     .padding(.bottom, 1)
                 Spacer()
             }
-            //.frame(width: width, height: bottomHieght, alignment: .bottom)
             VStack {
-                Spacer()
                 ZStack(alignment: .bottom) {
                     RoundedHalfRectangle(
                         width: width, height: height - imageHeight + 20, cornerRadius: cornerRadius,
@@ -51,6 +53,7 @@ struct ProjectViewNew: View {
                         .padding(.leading, 15)
                         Spacer()
                         Button(action: {
+                            print(height)
                             print("This project id is - ", project.id)
                         }) {
                             Text("Открыть")
@@ -64,10 +67,8 @@ struct ProjectViewNew: View {
                         .padding(.top, 16)
                         .padding(.trailing, 13)
                     }
-                    .frame(width: width, height: height - imageHeight, alignment: .bottom)
                 }
             }
-            .frame(width: width, height: height, alignment: .bottom)
         }
         .frame(width: width, height: height, alignment: .bottom)
     }
