@@ -21,6 +21,7 @@ struct FeedSwipeView: View {
     let projects = [Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 1, name: "BioTerm2", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 2, name: "BioTerm3", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest")]
     
     func getHeight(id: Int) -> CGFloat {
+        print(heightDiff)
         if id == projects[index].id {
             return height + 70
         } else if index < projects.count - 1 && id == projects[index + 1].id {
@@ -28,7 +29,7 @@ struct FeedSwipeView: View {
         } else if index > 0 && id == projects[index - 1].id {
             return height + heightDiff
         }
-        return height
+        return height + heightDiff
     }
     
     
@@ -41,7 +42,6 @@ struct FeedSwipeView: View {
                         ProjectViewNew(project: pr)
                             .frame(width: width, height: getHeight(id: pr.id))
                             .padding(.leading, 15)
-
                 }
             }
         }
@@ -54,14 +54,16 @@ struct FeedSwipeView: View {
                     self.heightDiff = abs(value.translation.width)/width*70
                 })
                 .onEnded({ value in
-                    if -value.predictedEndTranslation.width > width*0.7, self.index < self.projects.count - 1 {
+                    if -value.translation.width > width*0.6, -value.predictedEndTranslation.width > width*0.9, self.index < self.projects.count - 1 {
                         self.index += 1
                     }
-                    if value.predictedEndTranslation.width > width*0.7, self.index > 0 {
+                    if value.translation.width > width*0.6, value.predictedEndTranslation.width > width*0.9, self.index > 0 {
                         self.index -= 1
                     }
-                    self.heightDiff = 0
-                    withAnimation { self.offset = -(width + self.spacing) * CGFloat(self.index) }
+                    withAnimation { self.offset = -(width + self.spacing) * CGFloat(self.index)
+                        self.heightDiff = 20
+                        self.heightDiff = 0
+                    }
                 })
         )
     }
