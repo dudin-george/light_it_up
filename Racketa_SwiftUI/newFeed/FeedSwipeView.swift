@@ -11,29 +11,26 @@ struct FeedSwipeView: View {
     
     @State private var offset: CGFloat = 0
     @State private var index = 0
-    //разница в высоте
     @State private var heightDiff: CGFloat = 0
+    
     
     private let width = UIScreen.main.bounds.width - 60
     private let height: CGFloat = UIScreen.main.bounds.height - 274
-
+    private let heightDelta: CGFloat = 70
     
     let projects = [Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 1, name: "BioTerm2", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 2, name: "BioTerm3", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest")]
     
-    func getHeight(id: Int) -> CGFloat {
-        print(heightDiff)
+    private func getHeight(id: Int) -> CGFloat {
+        //print("DEBUG:", height + heightDelta - heightDiff)
         if id == projects[index].id {
-            return height + 70
-        } else if index < projects.count - 1 && id == projects[index + 1].id {
-            return height + heightDiff
-        } else if index > 0 && id == projects[index - 1].id {
-            return height + heightDiff
+            return height + heightDelta - heightDiff
         }
         return height + heightDiff
     }
     
     
     let spacing: CGFloat = 0
+    let leading: CGFloat = 15
     
     var body: some View {
         return ScrollView(.horizontal, showsIndicators: true) {
@@ -41,7 +38,8 @@ struct FeedSwipeView: View {
                     ForEach(self.projects) { pr in
                         ProjectViewNew(project: pr)
                             .frame(width: width, height: getHeight(id: pr.id))
-                            .padding(.leading, 15)
+                            .animation(Animation.easeInOut(duration: 0.7))
+                            .padding(.leading, leading)
                 }
             }
         }
@@ -51,17 +49,21 @@ struct FeedSwipeView: View {
             DragGesture()
                 .onChanged({ value in
                     self.offset = value.translation.width - width * CGFloat(self.index)
-                    self.heightDiff = abs(value.translation.width)/width*70
+                    self.heightDiff = abs(value.translation.width)/width*heightDelta
                 })
                 .onEnded({ value in
-                    if -value.translation.width > width*0.6, -value.predictedEndTranslation.width > width*0.9, self.index < self.projects.count - 1 {
+                    let k: CGFloat = 0.8
+                    let kPredict: CGFloat = 1
+                    if -value.translation.width > width*k,
+                       -value.predictedEndTranslation.width > width*kPredict, self.index < self.projects.count - 1 {
                         self.index += 1
                     }
-                    if value.translation.width > width*0.6, value.predictedEndTranslation.width > width*0.9, self.index > 0 {
+                    if value.translation.width > width*k,
+                       value.predictedEndTranslation.width > width*kPredict, self.index > 0 {
                         self.index -= 1
                     }
-                    withAnimation { self.offset = -(width + self.spacing) * CGFloat(self.index)
-                        self.heightDiff = 20
+                    withAnimation {
+                        self.offset = -(width + self.spacing + self.leading) * CGFloat(self.index)
                         self.heightDiff = 0
                     }
                 })
