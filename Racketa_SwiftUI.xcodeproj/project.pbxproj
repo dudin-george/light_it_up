@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1113720B2601400000FE9AAA /* FeedSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720A2601400000FE9AAA /* FeedSwipeView.swift */; };
 		1113720F260145E200FE9AAA /* ProjectViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720E260145E200FE9AAA /* ProjectViewNew.swift */; };
+		112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112CFA282610EE8D005EA034 /* ProjectViewMain.swift */; };
 		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
 		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
 		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1113720A2601400000FE9AAA /* FeedSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSwipeView.swift; sourceTree = "<group>"; };
 		1113720E260145E200FE9AAA /* ProjectViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewNew.swift; sourceTree = "<group>"; };
+		112CFA282610EE8D005EA034 /* ProjectViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewMain.swift; sourceTree = "<group>"; };
 		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
 		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
 		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1113720A2601400000FE9AAA /* FeedSwipeView.swift */,
+				112CFA282610EE8D005EA034 /* ProjectViewMain.swift */,
 			);
 			path = newFeed;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				113BC12D25EFF2950076AEDC /* Person.swift in Sources */,
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,
 				113BC13A25F015B30076AEDC /* Event.swift in Sources */,
+				112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */,
 				113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
