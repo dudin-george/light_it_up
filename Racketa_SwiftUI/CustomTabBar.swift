@@ -42,6 +42,7 @@ struct CustomTabBar: View {
             .foregroundColor(self.selected == 2 ? .blue : .gray)
         }
         .font(Font.custom(fontName, size: 10))
+        .padding(.bottom)
     }
     
 }

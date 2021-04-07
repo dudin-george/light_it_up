@@ -12,8 +12,10 @@ struct Project: Identifiable {
     var name: String
     var description: String
     var imageName: String
+    var mainTag: String
     var tags: [String] = []
     var deadlines: [Date] = []
     var team: [Person: String] = [:]
     var events: [Event] = []
+    var town: String
 }

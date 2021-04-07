@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProjectViewMain: View {
+    
     @Binding var showView: Bool
     @State private var offsetY: CGFloat = 0
     
@@ -71,23 +72,3 @@ struct ProjectViewMain: View {
     }
 }
 
-//struct ProjectViewMain_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let testProject = Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest")
-//        //ProjectViewMain(project: testProject)
-//    }
-//}
-
-//        Image("forTest")
-//            .gesture(
-//                DragGesture()
-//                    .onChanged({
-//                        value in
-//                        print(value.translation.height)
-//                        //showView = value.translation.height > 100
-//                    })
-//                    .onEnded({ value in
-//                        print(value.translation.height)
-//                        showView = value.translation.height > 30
-//                    })
-//            )

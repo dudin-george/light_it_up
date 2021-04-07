@@ -9,17 +9,20 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var selected = 1
+    @State var selected = 0
+    
     
     var body: some View {
         ZStack {
+            
             if selected == 0 {
-                FeedView()
+                FeedViewNew()
             } else if selected == 1 {
-                MyProjectFeedView()
+                Text("SecondView")
             } else {
                 Text("ThirdView")
             }
+            
             VStack {
                 Spacer()
                 CustomTabBar.init(selected: self.$selected)

@@ -7,17 +7,12 @@
 
 import Foundation
 
-class ProjectFeedManager: ObservableObject {
+class ProjectSubscribeManager: ObservableObject {
     
-    @Published private var model = ProjectManager(type: "Feed")
+    @Published private var model = ProjectManager(type: "Subscribe")
     
     var projects: [Project] {
         model.projects
-    }
-    
-    func add(){
-        //TEST
-        //model.addProject()
     }
     
 }

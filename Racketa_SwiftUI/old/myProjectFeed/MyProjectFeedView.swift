@@ -40,7 +40,7 @@ struct MyProjectFeedView: View {
             
             ScrollView {
                 ForEach(viewModel.projects) { project in
-                    ProjectView(project: project)
+                    ProjectViewSubscribe(project: project)
                         .padding(.bottom, 10.5)
                         .padding(.horizontal, 7)
                 }

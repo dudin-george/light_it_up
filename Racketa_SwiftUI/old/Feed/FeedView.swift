@@ -11,7 +11,7 @@ struct FeedView: View {
     
     let fontName: String = "Proxima Nova"
     
-    @ObservedObject var viewModel = ProjectFeedManager()
+    @ObservedObject var viewModel = ProjectSubscribeManager()
     @State var selectedView = 0
     
     var body: some View {
@@ -40,7 +40,7 @@ struct FeedView: View {
             .padding(.bottom, 21)
             ScrollView {
                 ForEach(viewModel.projects) { project in
-                    ProjectView(project: project)
+                    ProjectViewSubscribe(project: project)
                         .padding(.bottom, 10.5)
                         .padding(.horizontal, 7)
                 }

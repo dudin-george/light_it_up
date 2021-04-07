@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1113720B2601400000FE9AAA /* FeedSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720A2601400000FE9AAA /* FeedSwipeView.swift */; };
-		1113720F260145E200FE9AAA /* ProjectViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720E260145E200FE9AAA /* ProjectViewNew.swift */; };
+		1113720B2601400000FE9AAA /* FeedInterestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720A2601400000FE9AAA /* FeedInterestingView.swift */; };
+		1113720F260145E200FE9AAA /* ProjectViewInteresting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */; };
 		112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112CFA282610EE8D005EA034 /* ProjectViewMain.swift */; };
+		113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113497F3261D9B11007AAE96 /* TestSystem.swift */; };
+		113497FB261DA853007AAE96 /* FeedSubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113497FA261DA853007AAE96 /* FeedSubscribeView.swift */; };
+		11349802261DA982007AAE96 /* ProjectInterestingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11349801261DA982007AAE96 /* ProjectInterestingManager.swift */; };
+		11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11349804261DAA6F007AAE96 /* FeedViewNew.swift */; };
 		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
 		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
 		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
@@ -29,10 +33,10 @@
 		11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87D25E3D869006EEADC /* FeedView.swift */; };
 		11C7C88225E3D87B006EEADC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88125E3D87B006EEADC /* MainView.swift */; };
 		11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */; };
-		11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88A25E42DA8006EEADC /* ProjectView.swift */; };
+		11C7C88B25E42DA8006EEADC /* ProjectViewSubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */; };
 		11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */; };
 		11C7C89525E43725006EEADC /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89425E43725006EEADC /* Project.swift */; };
-		11C7C89A25E6C0E6006EEADC /* ProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */; };
+		11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */; };
 		11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */; };
 		11C7C8AA25E81AE0006EEADC /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */; };
 		11C7C8AC25E81AE5006EEADC /* ProximaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */; };
@@ -43,9 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1113720A2601400000FE9AAA /* FeedSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSwipeView.swift; sourceTree = "<group>"; };
-		1113720E260145E200FE9AAA /* ProjectViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewNew.swift; sourceTree = "<group>"; };
+		1113720A2601400000FE9AAA /* FeedInterestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInterestingView.swift; sourceTree = "<group>"; };
+		1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewInteresting.swift; sourceTree = "<group>"; };
 		112CFA282610EE8D005EA034 /* ProjectViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewMain.swift; sourceTree = "<group>"; };
+		113497F3261D9B11007AAE96 /* TestSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSystem.swift; sourceTree = "<group>"; };
+		113497FA261DA853007AAE96 /* FeedSubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSubscribeView.swift; sourceTree = "<group>"; };
+		11349801261DA982007AAE96 /* ProjectInterestingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInterestingManager.swift; sourceTree = "<group>"; };
+		11349804261DAA6F007AAE96 /* FeedViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewNew.swift; sourceTree = "<group>"; };
 		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
 		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
 		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -67,10 +75,10 @@
 		11C7C87D25E3D869006EEADC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		11C7C88125E3D87B006EEADC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		11C7C88A25E42DA8006EEADC /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewSubscribe.swift; sourceTree = "<group>"; };
 		11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHalfRectangle.swift; sourceTree = "<group>"; };
 		11C7C89425E43725006EEADC /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFeedManager.swift; sourceTree = "<group>"; };
+		11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSubscribeManager.swift; sourceTree = "<group>"; };
 		11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
 		11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.ttf"; sourceTree = "<group>"; };
 		11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
@@ -100,13 +108,33 @@
 			path = old;
 			sourceTree = "<group>";
 		};
-		1113720926013FC300FE9AAA /* newFeed */ = {
+		1113720926013FC300FE9AAA /* FeedInteresting */ = {
 			isa = PBXGroup;
 			children = (
-				1113720A2601400000FE9AAA /* FeedSwipeView.swift */,
+				1113720A2601400000FE9AAA /* FeedInterestingView.swift */,
+				11349801261DA982007AAE96 /* ProjectInterestingManager.swift */,
 				112CFA282610EE8D005EA034 /* ProjectViewMain.swift */,
 			);
-			path = newFeed;
+			path = FeedInteresting;
+			sourceTree = "<group>";
+		};
+		113497FE261DA8E3007AAE96 /* FeedSubscribe */ = {
+			isa = PBXGroup;
+			children = (
+				113497FA261DA853007AAE96 /* FeedSubscribeView.swift */,
+				11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */,
+			);
+			path = FeedSubscribe;
+			sourceTree = "<group>";
+		};
+		11349807261DAA75007AAE96 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				11349804261DAA6F007AAE96 /* FeedViewNew.swift */,
+				1113720926013FC300FE9AAA /* FeedInteresting */,
+				113497FE261DA8E3007AAE96 /* FeedSubscribe */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		113BC12125EFBD420076AEDC /* myProjectFeed */ = {
@@ -124,8 +152,8 @@
 		113BC12625EFBDA60076AEDC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1113720E260145E200FE9AAA /* ProjectViewNew.swift */,
-				11C7C88A25E42DA8006EEADC /* ProjectView.swift */,
+				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
+				11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */,
 				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
 				11C7C88D25E43305006EEADC /* Shapes */,
 			);
@@ -153,7 +181,7 @@
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
-				1113720926013FC300FE9AAA /* newFeed */,
+				11349807261DAA75007AAE96 /* Feed */,
 				11C7C87A25E3D7AE006EEADC /* Authorization */,
 				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
 				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
@@ -191,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				11C7C87D25E3D869006EEADC /* FeedView.swift */,
-				11C7C89925E6C0E6006EEADC /* ProjectFeedManager.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -207,6 +234,7 @@
 		11C7C89325E4370C006EEADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				113497F3261D9B11007AAE96 /* TestSystem.swift */,
 				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
 				113BC12C25EFF2950076AEDC /* Person.swift */,
@@ -307,17 +335,20 @@
 				113BC13025EFF3F90076AEDC /* DetailView.swift in Sources */,
 				113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */,
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
-				11C7C88B25E42DA8006EEADC /* ProjectView.swift in Sources */,
+				11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */,
+				11C7C88B25E42DA8006EEADC /* ProjectViewSubscribe.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
-				11C7C89A25E6C0E6006EEADC /* ProjectFeedManager.swift in Sources */,
+				11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */,
 				11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */,
-				1113720B2601400000FE9AAA /* FeedSwipeView.swift in Sources */,
+				1113720B2601400000FE9AAA /* FeedInterestingView.swift in Sources */,
 				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
-				1113720F260145E200FE9AAA /* ProjectViewNew.swift in Sources */,
+				1113720F260145E200FE9AAA /* ProjectViewInteresting.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
+				113497FB261DA853007AAE96 /* FeedSubscribeView.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
 				113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */,
+				11349802261DA982007AAE96 /* ProjectInterestingManager.swift in Sources */,
 				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
 				113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */,
 				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
@@ -327,6 +358,7 @@
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,
 				113BC13A25F015B30076AEDC /* Event.swift in Sources */,
 				112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */,
+				113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */,
 				113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeedSwipeView: View {
+struct FeedInterestingView: View {
     
     @State private var showingSheet = false
     @State private var offset: CGFloat = 0
@@ -17,20 +17,20 @@ struct FeedSwipeView: View {
     
     
     private let width = UIScreen.main.bounds.width - 60
-    private let height: CGFloat = UIScreen.main.bounds.height - 274
+    private let height: CGFloat = UIScreen.main.bounds.height - 330
     private let heightDelta: CGFloat = 70
     
-    let projects = [Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 1, name: "BioTerm2", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"), Project(id: 2, name: "BioTerm3", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest")]
+    @ObservedObject var viewModel = ProjectInterestingManager()
     
     private func getHeight(id: Int) -> CGFloat {
-        if id == projects[index].id {
+        if id == viewModel.projects[index].id {
             return height + heightDelta - heightDiff
         }
         return height + heightDiff
     }
     
     private func getOffsetY(id: Int) -> CGFloat {
-        if id == projects[index].id {
+        if id == viewModel.projects[index].id {
             return offsetY
         }
         return 0
@@ -46,24 +46,18 @@ struct FeedSwipeView: View {
     var body: some View {
         ZStack() {
             scrollView()
-            ProjectViewMain(showView: $showingSheet, project: projects[index])
+            ProjectViewMain(showView: $showingSheet, project: viewModel.projects[index])
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .animation(Animation.easeIn(duration: 3))
                 .offset(y: getOffsetMain(show: showingSheet))
         }
-//        .sheet(isPresented: $showingSheet, content: {
-//            ProjectViewMain(project: projects[index])
-//        })
-//        .fullScreenCover(isPresented: $showingSheet, content: {
-//            ProjectViewMain(showView: $showingSheet, project: projects[index])
-//        })
     }
     
     func scrollView() -> some View {
         ScrollView(.horizontal, showsIndicators: true) {
                 HStack(spacing: self.spacing) {
-                    ForEach(self.projects) { pr in
-                        ProjectViewNew(project: pr)
+                    ForEach(self.viewModel.projects) { pr in
+                        ProjectViewInteresting(project: pr)
                             .frame(width: width, height: getHeight(id: pr.id))
                             .animation(Animation.easeInOut(duration: 0.5))
                             .padding(.leading, leading)
@@ -89,15 +83,12 @@ struct FeedSwipeView: View {
                     let k: CGFloat = 0.8
                     let kPredict: CGFloat = 1
                     if -value.translation.width > width*k,
-                       -value.predictedEndTranslation.width > width*kPredict, self.index < self.projects.count - 1 {
+                       -value.predictedEndTranslation.width > width*kPredict, self.index < self.viewModel.projects.count - 1 {
                         self.index += 1
                     }
                     if value.translation.width > width*k,
                        value.predictedEndTranslation.width > width*kPredict, self.index > 0 {
                         self.index -= 1
-                    }
-                    if value.predictedEndTranslation.height < -150 {
-                        showingSheet = true
                     }
                     withAnimation {
                         self.offset = -(width + self.spacing + self.leading) * CGFloat(self.index)
@@ -111,6 +102,6 @@ struct FeedSwipeView: View {
 
 struct FeedSwipeView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedSwipeView()
+        FeedInterestingView()
     }
 }

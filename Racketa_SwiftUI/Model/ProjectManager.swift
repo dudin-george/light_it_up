@@ -17,16 +17,14 @@ struct ProjectManager {
     }
     
     func fetchProject(type: String) -> [Project] {
-        let k = type == "Feed" ? 5 : 3
+        let k = 7
         var projects: [Project] = []
         for i in 0..<k {
-            projects.append(Project(id: i, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"))
+            var pr = TestSystem.TestProject
+            pr.id = i
+            projects.append(pr)
         }
         return projects
     }
-
-    //TEST
-//    mutating func addProject(){
-//        projects.append(Project(id: 10, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"))
-//    }
+    
 }

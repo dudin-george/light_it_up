@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import UIKit
-struct ProjectView: View {
+
+struct ProjectViewSubscribe: View {
     
     let project: Project
     
@@ -73,7 +73,6 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        let testProject = Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest")
-        ProjectView(project: testProject)
+        ProjectViewSubscribe(project: TestSystem.TestProject)
     }
 }
