@@ -46,7 +46,8 @@ struct FeedInterestingView: View {
     var body: some View {
         ZStack() {
             scrollView()
-            ProjectViewMain(showView: $showingSheet, project: viewModel.projects[index])
+            //ProjectViewMain(showView: $showingSheet, project: viewModel.projects[index])
+            ProjectViewMain(project: viewModel.projects[index], events: TestSystem.events)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .animation(Animation.easeIn(duration: 3))
                 .offset(y: getOffsetMain(show: showingSheet))

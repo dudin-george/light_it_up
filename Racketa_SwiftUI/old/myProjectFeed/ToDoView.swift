@@ -9,14 +9,8 @@ import SwiftUI
 
 struct ToDoView: View {
 
-    var events: [Event] = [Event(name: "Реорганизация файлов", date: Date(timeIntervalSince1970: 15000)),
-                           Event(name: "Реорганизация файлов1", date: Date(timeIntervalSince1970: 14000)),
-                           Event(name: "Реорганизация файлов2", date: Date(timeIntervalSince1970: 16000)),
-                           Event(name: "Реорганизация файлов3", date: Date(timeIntervalSince1970: 170000)),
-                           Event(name: "Реорганизация файлов", date: Date(timeIntervalSince1970: 15000)),
-                            Event(name: "Реорганизация файлов1", date: Date(timeIntervalSince1970: 14000)),
-                            Event(name: "Реорганизация файлов2", date: Date(timeIntervalSince1970: 16000)),
-                            Event(name: "Реорганизация файлов3", date: Date(timeIntervalSince1970: 170000))]
+    var events: [Event] = TestSystem.events
+    
     private let fontName: String = "Proxima Nova"
     var width: CGFloat = 150
     var height: CGFloat = 193

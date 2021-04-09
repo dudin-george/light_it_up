@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Event: Hashable {
+struct Event: Identifiable {
+    var id: Int
     var name: String
     var date: Date
     var dateString: String {

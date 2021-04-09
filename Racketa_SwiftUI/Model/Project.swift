@@ -18,4 +18,8 @@ struct Project: Identifiable {
     var team: [Person: String] = [:]
     var events: [Event] = []
     var town: String
+    
+    var mainText: MainTextInfo {
+        return MainTextInfo(name: name, description: description)
+    }
 }
