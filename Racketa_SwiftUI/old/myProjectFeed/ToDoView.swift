@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToDoView: View {
 
-    var events: [Event] = TestSystem.events
+    var events: [Event] = []
     
     private let fontName: String = "Proxima Nova"
     var width: CGFloat = 150

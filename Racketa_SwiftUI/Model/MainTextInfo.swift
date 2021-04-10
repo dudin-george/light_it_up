@@ -10,4 +10,5 @@ import Foundation
 struct MainTextInfo {
     var name: String
     var description: String
+    var imageString: String
 }

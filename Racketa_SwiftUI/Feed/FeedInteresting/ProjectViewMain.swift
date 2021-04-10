@@ -9,20 +9,41 @@ import SwiftUI
 
 struct ProjectViewMain: View {
     
-    @State var showView: Bool = true
-    //@Binding var showView: Bool
+    //@State var showView: Bool = true
+    @Binding var showView: Bool
     @State private var offsetY: CGFloat = 0
+    
+    var isProject: Bool
     
     private let width = UIScreen.main.bounds.width
     private let height: CGFloat = 247
     private let fontName: String = "Proxima Nova"
     private let cornerRadius: CGFloat = 26
     
-    var project: Project
-    var events: [Event]
-//    var news: [News]
-//    потом изменю когда начну когда пойму как запросы делать на сервер и тп
-    var news = TestSystem.projects
+    var project: Project?
+    var events: [Event] {
+        if project != nil {
+            return project!.events
+        }
+        return []
+    }
+    
+    var news: [News] {
+        if project != nil {
+            return project!.news
+        }
+        return []
+    }
+    
+    var newsItem: News?
+    
+    var mainInfo: MainTextInfo {
+        if project != nil {
+            return project!.mainInfo
+        } else {
+            return newsItem!.mainInfo
+        }
+    }
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -38,7 +59,11 @@ struct ProjectViewMain: View {
             .animation(Animation.easeInOut(duration: 0.4))
 
             VStack {
-                setScroll()
+                if isProject {
+                    setProjectScroll()
+                } else {
+                    setNewsScroll()
+                }
             }
             .frame(width: width, height: UIScreen.main.bounds.height - height + 30)
             .background(Color.init(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -61,30 +86,14 @@ struct ProjectViewMain: View {
         )
     }
     
-    private func setText(title: String,
-                         lead: CGFloat) -> some View{
-        HStack {
-            Text(title)
-                .bold()
-                .font(Font.custom(fontName, size: 24))
-                .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-            Spacer()
-        }
-        .padding(.leading, lead)
-    }
-    
-    private func setScroll() -> some View {
+    private func setProjectScroll() -> some View {
         ScrollView {
-            ZStack {
-                RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 230, cornerRadius: 20, rotationDegree: 0, backgroundColor: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), shadow: false)
-                    .shadow(color: Color(#colorLiteral(red: 0.9167665993, green: 0.9167665993, blue: 0.9167665993, alpha: 1)), radius: 2, x: 2, y: 2)
-                firstMenu()
-            }
+            FirstMenuView(title: mainInfo.name, description: mainInfo.description, isProject: isProject)
             secondMenu()
                 .padding()
-            
+                
             ForEach(news) { item in
-                ProjectViewSubscribe(project: item)
+                ProjectViewSubscribe(project: nil, newsItem: item)
                     .padding(.bottom, 10.5)
                     .padding(.horizontal, 8)
             }
@@ -94,44 +103,25 @@ struct ProjectViewMain: View {
         }
     }
     
-    private func firstMenu() -> some View {
-        VStack {
-            HStack {
-                setText(title: project.name, lead: 16)
-                Spacer()
-                Button(action: {
-                    print("DEBUG: join")
-                }) {
-                    Text("Присоединиться")
-                        .bold()
-                        .font(Font.custom(fontName, size: 14))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                }
-                .frame(width: 160, height: 37)
-                .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                .cornerRadius(10)
-            }
-            .padding()
-            Text(project.description)
-                .lineLimit(2)
-                .padding()
-                .font(Font.custom(fontName, size: 18))
+    private func setNewsScroll() -> some View {
+        ScrollView {
+            FirstMenuView(title: mainInfo.name, description: mainInfo.description, isProject: isProject)
             
             HStack {
-                Button(action: {
-                    print("DEBUG: save")
-                }) {
-                    Text("Сохранить")
-                        .bold()
-                        .font(Font.custom(fontName, size: 18))
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                }
-                .frame(width: 118, height: 37)
+                Text(newsItem!.text)
+                    .padding()
+                    .font(Font.custom(fontName, size: 16))
                 Spacer()
             }
-            .padding()
+            .padding(.leading, 16)
+            
+            
+            VStack {
+                Spacer(minLength: 80)
+            }
         }
     }
+    
     
     private func secondMenu() -> some View {
         ZStack {
@@ -174,8 +164,8 @@ struct ProjectViewMain: View {
 }
 
 
-struct ProjectViewMain_Previews: PreviewProvider {
-    static var previews: some View {
-        ProjectViewMain(project: TestSystem.TestProject, events: TestSystem.events)
-    }
-}
+//struct ProjectViewMain_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProjectViewMain(project: TestSystem.TestProject, events: TestSystem.events, isProject: true)
+//    }
+//}

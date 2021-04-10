@@ -16,6 +16,7 @@
 		11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11349804261DAA6F007AAE96 /* FeedViewNew.swift */; };
 		1134980A2620C8A0007AAE96 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113498092620C8A0007AAE96 /* News.swift */; };
 		1134980D2620C91D007AAE96 /* MainTextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134980C2620C91D007AAE96 /* MainTextInfo.swift */; };
+		113498102620F11A007AAE96 /* FirstMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134980F2620F11A007AAE96 /* FirstMenuView.swift */; };
 		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
 		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
 		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
@@ -58,6 +59,7 @@
 		11349804261DAA6F007AAE96 /* FeedViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewNew.swift; sourceTree = "<group>"; };
 		113498092620C8A0007AAE96 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1134980C2620C91D007AAE96 /* MainTextInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextInfo.swift; sourceTree = "<group>"; };
+		1134980F2620F11A007AAE96 /* FirstMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMenuView.swift; sourceTree = "<group>"; };
 		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
 		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
 		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
 				11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */,
 				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
+				1134980F2620F11A007AAE96 /* FirstMenuView.swift */,
 				11C7C88D25E43305006EEADC /* Shapes */,
 			);
 			path = ViewModel;
@@ -241,10 +244,10 @@
 				113497F3261D9B11007AAE96 /* TestSystem.swift */,
 				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
-				113BC12C25EFF2950076AEDC /* Person.swift */,
-				113BC13925F015B30076AEDC /* Event.swift */,
 				113498092620C8A0007AAE96 /* News.swift */,
 				1134980C2620C91D007AAE96 /* MainTextInfo.swift */,
+				113BC12C25EFF2950076AEDC /* Person.swift */,
+				113BC13925F015B30076AEDC /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */,
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
 				11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */,
+				113498102620F11A007AAE96 /* FirstMenuView.swift in Sources */,
 				11C7C88B25E42DA8006EEADC /* ProjectViewSubscribe.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
 				11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */,

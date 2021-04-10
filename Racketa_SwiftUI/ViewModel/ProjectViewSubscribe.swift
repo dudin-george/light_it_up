@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ProjectViewSubscribe: View {
     
-    let project: Project
+    let project: Project?
+    let newsItem: News?
+    
+    @State private var showingSheet = false
+    
+    var mainInfo: MainTextInfo {
+        if project != nil {
+            return project!.mainInfo
+        } else {
+            return newsItem!.mainInfo
+        }
+    }
     
     private let width = UIScreen.main.bounds.width - 20
     private let cornerRadius: CGFloat = 26
@@ -18,8 +29,10 @@ struct ProjectViewSubscribe: View {
     private let fontName: String = "Proxima Nova"
     
     var body: some View {
+    
+        
         ZStack(alignment: .bottom) {
-            Image(project.imageName)
+            Image("forTest")
                 .resizable()
                 .scaledToFill()
                 .frame(width: width, height: height - 1, alignment: .top)
@@ -35,11 +48,11 @@ struct ProjectViewSubscribe: View {
                         .frame(width: width, height: bottomHieght, alignment: .bottom)
                     HStack(alignment: .top, spacing: 15) {
                         VStack(alignment: .leading, spacing: 6){
-                            Text(project.name)
+                            Text(mainInfo.name)
                                 .font(Font.custom("ProximaNova-Extrabld", size: 24))
                                 .lineLimit(2)
                                 .padding(.top, 11)
-                            Text(project.description)
+                            Text(mainInfo.description)
                                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                 .font(Font.custom(fontName, size: 14))
                                 .lineLimit(2)
@@ -48,7 +61,8 @@ struct ProjectViewSubscribe: View {
                         .padding(.leading, 15)
                         Spacer()
                         Button(action: {
-                            print("This project id is - ", project.id)
+                            print("This project id is - ", project)
+                            showingSheet.toggle()
                         }) {
                             Text("Открыть")
                                 .bold()
@@ -60,6 +74,13 @@ struct ProjectViewSubscribe: View {
                         .cornerRadius(19)
                         .padding(.top, 16)
                         .padding(.trailing, 13)
+                        .fullScreenCover(isPresented: $showingSheet) {
+                            if project != nil {
+                                ProjectViewMain(showView: $showingSheet, isProject: true, project: project, newsItem: nil)
+                            } else {
+                                ProjectViewMain(showView: $showingSheet, isProject: false, project: nil, newsItem: newsItem)
+                            }
+                        }
                     }
                     .frame(width: width, height: bottomHieght, alignment: .bottom)
                 }
@@ -71,8 +92,8 @@ struct ProjectViewSubscribe: View {
 
 
 
-struct ProjectView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProjectViewSubscribe(project: TestSystem.TestProject)
-    }
-}
+//struct ProjectView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProjectViewSubscribe(project: TestSystem.TestProject)
+//    }
+//}

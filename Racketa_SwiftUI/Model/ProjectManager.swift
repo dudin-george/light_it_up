@@ -9,11 +9,11 @@ import Foundation
 
 struct ProjectManager {
     
-    private(set) var projects: [Project] = []
+    private(set) var projects: [Project] = TestSystem.projectsTest
     
     
     init(type: String) {
-        projects = fetchProject(type: type)
+        //projects = fetchProject(type: type)
     }
     
     func fetchProject(type: String) -> [Project] {
