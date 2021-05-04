@@ -61,7 +61,7 @@ struct ProjectViewSubscribe: View {
                         .padding(.leading, 15)
                         Spacer()
                         Button(action: {
-                            print("This project id is - ", project)
+                            print("This project id is - ", project!)
                             showingSheet.toggle()
                         }) {
                             Text("Открыть")

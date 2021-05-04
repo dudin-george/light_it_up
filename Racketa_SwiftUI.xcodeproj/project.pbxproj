@@ -24,6 +24,8 @@
 		113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13225EFFBFB0076AEDC /* CalendarView.swift */; };
 		113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13625F0137D0076AEDC /* ToDoView.swift */; };
 		113BC13A25F015B30076AEDC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13925F015B30076AEDC /* Event.swift */; };
+		1145CDE92641CBF90068A784 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDE82641CBF90068A784 /* ProjectMainView.swift */; };
+		1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */; };
 		11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EF4C25F8106B001075D4 /* TeemView.swift */; };
 		11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */; };
 		11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		113BC13225EFFBFB0076AEDC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		113BC13625F0137D0076AEDC /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		113BC13925F015B30076AEDC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1145CDE82641CBF90068A784 /* ProjectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
+		1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		11A6EF4C25F8106B001075D4 /* TeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeemView.swift; sourceTree = "<group>"; };
 		11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racketa_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
@@ -108,7 +112,14 @@
 		1113720726013F5E00FE9AAA /* old */ = {
 			isa = PBXGroup;
 			children = (
+				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
+				1134980F2620F11A007AAE96 /* FirstMenuView.swift */,
+				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
+				11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */,
+				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
+				11C7C87A25E3D7AE006EEADC /* Authorization */,
 				11C7C87C25E3D800006EEADC /* Feed */,
+				11349807261DAA75007AAE96 /* Feed */,
 				113BC12125EFBD420076AEDC /* myProjectFeed */,
 			);
 			path = old;
@@ -140,7 +151,8 @@
 				1113720926013FC300FE9AAA /* FeedInteresting */,
 				113497FE261DA8E3007AAE96 /* FeedSubscribe */,
 			);
-			path = Feed;
+			name = Feed;
+			path = ../Feed;
 			sourceTree = "<group>";
 		};
 		113BC12125EFBD420076AEDC /* myProjectFeed */ = {
@@ -158,13 +170,18 @@
 		113BC12625EFBDA60076AEDC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
-				11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */,
-				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
-				1134980F2620F11A007AAE96 /* FirstMenuView.swift */,
 				11C7C88D25E43305006EEADC /* Shapes */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1145CDE72641CB1B0068A784 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				1145CDE82641CBF90068A784 /* ProjectMainView.swift */,
+				1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */,
+			);
+			path = SecondView;
 			sourceTree = "<group>";
 		};
 		11BA6C5C25DEE6A8000E0580 = {
@@ -188,13 +205,12 @@
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
-				11349807261DAA75007AAE96 /* Feed */,
-				11C7C87A25E3D7AE006EEADC /* Authorization */,
+				1145CDE72641CB1B0068A784 /* SecondView */,
 				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
-				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
 				113BC12625EFBDA60076AEDC /* ViewModel */,
 				11C7C89325E4370C006EEADC /* Model */,
 				11C7C84725E064A2006EEADC /* Extension.swift */,
+				113497F3261D9B11007AAE96 /* TestSystem.swift */,
 				1113720726013F5E00FE9AAA /* old */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
 				11BA6C7125DEE6AB000E0580 /* Info.plist */,
@@ -241,7 +257,6 @@
 		11C7C89325E4370C006EEADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				113497F3261D9B11007AAE96 /* TestSystem.swift */,
 				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
 				113498092620C8A0007AAE96 /* News.swift */,
@@ -352,6 +367,7 @@
 				11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */,
 				11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */,
 				1113720B2601400000FE9AAA /* FeedInterestingView.swift in Sources */,
+				1145CDE92641CBF90068A784 /* ProjectMainView.swift in Sources */,
 				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
 				1113720F260145E200FE9AAA /* ProjectViewInteresting.swift in Sources */,
@@ -365,6 +381,7 @@
 				113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */,
 				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
 				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
+				1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */,
 				11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */,
 				113BC12D25EFF2950076AEDC /* Person.swift in Sources */,
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,

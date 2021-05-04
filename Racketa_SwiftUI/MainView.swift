@@ -9,16 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var selected = 0
+    @State var selected = 1
     
     
     var body: some View {
         ZStack {
             
             if selected == 0 {
-                FeedViewNew()
+                Text("FirstView")
             } else if selected == 1 {
-                Text("SecondView")
+                ProjectMainView()
             } else {
                 Text("ThirdView")
             }
@@ -28,7 +28,7 @@ struct MainView: View {
                 CustomTabBar.init(selected: self.$selected)
                     .padding()
                     .padding(.horizontal, 32)
-                    .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 93, cornerRadius: 36, rotationDegree: 180, backgroundColor: Color.black).background(Color.clear))
+                    .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 93, cornerRadius: 36, rotationDegree: 180, backgroundColor: Color.white, shadow: true).background(Color.clear))
             }
         }
     }
