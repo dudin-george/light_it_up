@@ -10,7 +10,7 @@ import SwiftUI
 struct ProjectViewModel: View {
     
     private let cornerRadius: CGFloat = 26
-    private let project = TestSystem.TestProject
+    var project = TestSystem.TestProject
     private let fontName: String = "Proxima Nova"
     
     var body: some View {

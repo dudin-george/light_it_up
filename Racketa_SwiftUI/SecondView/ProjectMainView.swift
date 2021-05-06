@@ -13,20 +13,28 @@ struct ProjectMainView: View {
     private let height = UIScreen.main.bounds.size.height
     
     private let R = 3.03*UIScreen.main.bounds.width
+    
+    private var projects = TestSystem.projectsTest
+    
     @State private var angle:CGFloat = 0
     @State private var dW: CGFloat = 0
-    
+    @State private var currentId: Int = 0
     
     var body: some View {
         VStack {
-            ZStack {
-                ProjectViewModel()
-                    .frame(width: width - 56, height: height - 285)
+            if currentId == projects.endIndex {
+                Text("Проекты закончились :(")
+                    .frame(width: width - 56, height: height - 255)
                     .padding(.top)
-                projectView()
+            }
+            ZStack {
+                ForEach(0..<projects.count) { i in
+                    if projects.count - i - 1 >= currentId {
+                        projectView(project: projects[projects.count - i - 1])
+                    }
+                }
             }
             
-            Spacer()
             HStack(spacing: 50) {
                 Button(action: {
                     print("DEBUG: share")
@@ -39,9 +47,10 @@ struct ProjectMainView: View {
                 Button(action: {
                     print("DEBUG: add")
                 }, label: {
-                    Image("share")
+                    Image("plus")
                         .resizable()
                         .frame(width: 27, height: 27)
+                        .foregroundColor(.black)
 
                 })
                 .frame(width: 73, height: 73)
@@ -57,31 +66,60 @@ struct ProjectMainView: View {
                 })
                 .frame(width: 40, height: 25)
             }
+            .padding(.bottom, 90)
+            .padding(.top, 20)
         }
-        .padding(.bottom, 127)
     }
     
-    private func projectView() -> some View {
-        return ProjectViewModel()
-                .frame(width: width - 56, height: height - 285)
+    private func projectView(project: Project) -> some View {
+        return ProjectViewModel(project: project)
+                .frame(width: width - 56, height: height - 255)
                 .animation(.easeIn)
                 .padding(.top)
-                .rotationEffect(Angle(radians: Double(angle)))
-                .offset(x: dW, y: abs(2*R*sin(angle)*sin(angle)))
+                .rotationEffect(Angle(radians: getAngle(pr: project)))
+                .offset(x: getDW(pr: project), y: getDH(pr: project))
                 .gesture(
                     DragGesture()
                         .onChanged({ value in
-                            
                             self.dW = value.translation.width
                             self.angle = asin(self.dW/self.R)/2
                         })
                         .onEnded({ value in
-                            withAnimation(.easeOut(duration: 0.1), {
-                                self.dW = 0
-                                self.angle = 0
-                            })
+                            if abs(value.translation.width/width) > 0.5 {
+                                withAnimation(.easeOut(duration: 0.2), {
+                                    self.dW = value.translation.width/width*(width*1.9)
+                                    self.angle = asin(self.dW/self.R)/2
+                                })
+                                withAnimation(.easeOut(duration: 0.2), {
+                                    self.currentId += 1
+                                    self.dW = 0
+                                    self.angle = 0
+                                })
+                                if value.translation.width/width > 0 {
+                                    print("DEBUG: like")
+                                } else {
+                                    print("DEBUG: dislike")
+                                }
+                            } else {
+                                withAnimation(.easeOut(duration: 0.1), {
+                                    self.dW = 0
+                                    self.angle = 0
+                                })
+                            }
                         })
                 )
+    }
+    
+    private func getDW(pr: Project) -> CGFloat {
+        return projects[currentId].id == pr.id ? dW : 0
+    }
+    
+    private func getAngle(pr: Project) -> Double {
+        return projects[currentId].id == pr.id ? Double(angle) : 0.0
+    }
+    
+    private func getDH(pr: Project) -> CGFloat {
+        return projects[currentId].id == pr.id ? abs(2*R*sin(angle)*sin(angle)) : 0
     }
 }
 
