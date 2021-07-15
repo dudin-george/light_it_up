@@ -90,10 +90,3 @@ struct ProjectViewSubscribe: View {
     }
 }
 
-
-
-//struct ProjectView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ProjectViewSubscribe(project: TestSystem.TestProject)
-//    }
-//}

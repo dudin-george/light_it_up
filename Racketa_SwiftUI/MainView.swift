@@ -9,14 +9,14 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var selected = 1
+    @State var selected = 0
     
     
     var body: some View {
         ZStack {
             
             if selected == 0 {
-                Text("FirstView")
+                FeedProject()
             } else if selected == 1 {
                 ProjectMainView()
             } else {
