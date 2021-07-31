@@ -9,39 +9,29 @@ import SwiftUI
 
 struct CustomTabBar: View {
     
-    let fontName: String = "Proxima Nova"
-    
     @Binding var selected: Int
+    var titles: [String]
+    var firstColor: Color
+    var secondColor: Color
+    
+    var space: CGFloat = 12
     
     var body: some View {
         HStack {
-            Button(action: {
-                self.selected = 0
-            }) {
-                Text("Лента")
-                    .bold()
-            }.foregroundColor(self.selected == 0 ? .blue : .gray)
-            
-            Spacer(minLength: 12)
-            
-            Button(action: {
-                self.selected = 1
-            }) {
-                Text("Проекты")
-                    .bold()
-            }.foregroundColor(self.selected == 1 ? .blue : .gray)
-            
-            Spacer(minLength: 12)
-            
-            Button(action: {
-                self.selected = 2
-            }) {
-                Text("Профиль")
-                    .bold()
+            ForEach((0..<titles.count), id: \.self){ i in
+                Button(action: {
+                    self.selected = i
+                }) {
+                    Text(titles[i])
+                        .bold()
+                }
+                .foregroundColor(self.selected == i ? firstColor : secondColor)
+                if i < titles.count - 1 {
+                    Spacer(minLength: space)
+                }
             }
-            .foregroundColor(self.selected == 2 ? .blue : .gray)
         }
-        .font(Font.custom(fontName, size: 10))
+        .font(Font.custom(DesignClass.fontName, size: 10))
         .padding(.bottom)
     }
     

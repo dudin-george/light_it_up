@@ -27,7 +27,7 @@ struct FeedProject: View {
                         .accentColor(Color.init(#colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1)))
                     (Text(Image("pencil")).bold() + Text("Создать запись"))
                         .foregroundColor(.gray)
-                        .font(Font.custom("ProximaNova-Extrabld", size: 14))
+                        .font(Font.custom(DesignClass.fontNameBold, size: 14))
                         .padding(.leading, 12)
                 }
             }
@@ -39,7 +39,7 @@ struct FeedProject: View {
                     subView = true
                 }){
                     Text("Подписки")
-                        .font(Font.custom("ProximaNova-Extrabld", size: 14))
+                        .font(Font.custom(DesignClass.fontNameBold, size: 14))
                         .foregroundColor(subView ? .blue : .gray)
                         .overlay(
                             RoundedRectangle(cornerRadius: 15)
@@ -53,7 +53,7 @@ struct FeedProject: View {
                     subView = false
                 }){
                     Text("Интересное")
-                        .font(Font.custom("ProximaNova-Extrabld", size: 14))
+                        .font(Font.custom(DesignClass.fontNameBold, size: 14))
                         .foregroundColor(!subView ? .blue : .gray)
                         .overlay(
                             RoundedRectangle(cornerRadius: 15)

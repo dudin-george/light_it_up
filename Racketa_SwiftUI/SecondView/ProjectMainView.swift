@@ -14,7 +14,7 @@ struct ProjectMainView: View {
     
     private let R = 3.03*UIScreen.main.bounds.width
     
-    private var projects = TestSystem.projectsTest
+    private var projects = TestSystem(k: 10).projectsTest
     
     @State private var angle:CGFloat = 0
     @State private var dW: CGFloat = 0

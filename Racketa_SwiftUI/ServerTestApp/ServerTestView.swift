@@ -1,26 +1,25 @@
 //
-//  MainView.swift
+//  ServerTestView.swift
 //  Racketa_SwiftUI
 //
-//  Created by Александр Оганов on 22.02.2021.
+//  Created by Александр Оганов on 31.07.2021.
 //
 
 import SwiftUI
 
-struct MainView: View {
-    
+struct ServerTestView: View {
     @State var selected = 0
-    private let viewsTitles = ["Лента", "Проекты", "Профиль"]
+    private let viewsTitles = ["Проект", "Создать новость", "Статистика"]
     
     var body: some View {
         ZStack {
             
             if selected == 0 {
-                FeedProject()
+                SimpleManager()
             } else if selected == 1 {
-                ProjectMainView()
-            } else {
-                Text("ThirdView")
+                CreationView()
+            } else if selected == 2 {
+                Text("Coming soon")
             }
             
             VStack {
@@ -32,11 +31,10 @@ struct MainView: View {
             }
         }
     }
-    
 }
 
-struct MainView_Previews: PreviewProvider {
+struct ServerTestView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ServerTestView()
     }
 }

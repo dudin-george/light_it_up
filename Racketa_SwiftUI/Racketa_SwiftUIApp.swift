@@ -11,9 +11,8 @@ import SwiftUI
 struct Racketa_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
-            //DetailView(project: Project(id: 0, name: "BioTerm", description: "Производство экологических емкостей и другие непонятные слова", imageName: "forTest"))
-            //FeedInterestingView()
+            //MainView()
+            ServerTestView()
         }
     }
 }

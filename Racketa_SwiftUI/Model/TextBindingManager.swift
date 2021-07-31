@@ -15,7 +15,7 @@ class TextBindingManager: ObservableObject {
             }
         }
     }
-    let characterLimit: Int
+    private let characterLimit: Int
 
     init(limit: Int = 1){
         characterLimit = limit

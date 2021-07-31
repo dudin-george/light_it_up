@@ -23,8 +23,8 @@ struct RoundedHalfRectangle: View {
             path.addLine(to: CGPoint(x: width - cornerRadius, y: height))
             path.addArc(center: CGPoint(x: width - cornerRadius, y: height - cornerRadius), radius: cornerRadius, startAngle: .init(degrees: 90), endAngle: .init(degrees: 0), clockwise: true)
             path.addLine(to: CGPoint(x: width, y: 0))
-                
-        }.rotation(.init(degrees: rotationDegree))
+        }
+        .rotation(.init(degrees: rotationDegree))
         .fill(backgroundColor)
         .ignoresSafeArea()
         .shadow(color: shadow ? Color.init(#colorLiteral(red: 0.6990006345, green: 0.6990006345, blue: 0.6990006345, alpha: 0.5)) : Color.white, radius: 4, x: 0, y: 4)

@@ -7,43 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1113720B2601400000FE9AAA /* FeedInterestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720A2601400000FE9AAA /* FeedInterestingView.swift */; };
 		1113720F260145E200FE9AAA /* ProjectViewInteresting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */; };
-		112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112CFA282610EE8D005EA034 /* ProjectViewMain.swift */; };
+		1121AF2126B42C0F00799894 /* ProjectViewModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF2026B42C0F00799894 /* ProjectViewModelAPI.swift */; };
+		1121AF2626B54CA100799894 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF2526B54CA100799894 /* PostAPI.swift */; };
+		1121AF2926B559D400799894 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF2826B559D400799894 /* ImageLoader.swift */; };
+		1121AF2E26B55B2500799894 /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF2D26B55B2500799894 /* PosterImage.swift */; };
+		1121AF3326B5878200799894 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF3226B5878200799894 /* ImagePicker.swift */; };
+		1121AF3626B588A000799894 /* NewsCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF3526B588A000799894 /* NewsCreationView.swift */; };
+		1121AF3926B58CA400799894 /* ServerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF3826B58CA400799894 /* ServerTestView.swift */; };
+		1121AF3D26B5A5FC00799894 /* CreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF3C26B5A5FC00799894 /* CreationView.swift */; };
+		1121AF4226B5B57700799894 /* UserCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF4126B5B57700799894 /* UserCreationView.swift */; };
+		1121AF4826B5D9C000799894 /* ProjectCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121AF4726B5D9C000799894 /* ProjectCreationView.swift */; };
 		113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113497F3261D9B11007AAE96 /* TestSystem.swift */; };
-		113497FB261DA853007AAE96 /* FeedSubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113497FA261DA853007AAE96 /* FeedSubscribeView.swift */; };
-		11349802261DA982007AAE96 /* ProjectInterestingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11349801261DA982007AAE96 /* ProjectInterestingManager.swift */; };
-		11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11349804261DAA6F007AAE96 /* FeedViewNew.swift */; };
 		1134980A2620C8A0007AAE96 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113498092620C8A0007AAE96 /* News.swift */; };
 		1134980D2620C91D007AAE96 /* MainTextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134980C2620C91D007AAE96 /* MainTextInfo.swift */; };
-		113498102620F11A007AAE96 /* FirstMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134980F2620F11A007AAE96 /* FirstMenuView.swift */; };
-		113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */; };
-		113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */; };
-		113BC12D25EFF2950076AEDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* Person.swift */; };
-		113BC13025EFF3F90076AEDC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12F25EFF3F90076AEDC /* DetailView.swift */; };
-		113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13225EFFBFB0076AEDC /* CalendarView.swift */; };
-		113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13625F0137D0076AEDC /* ToDoView.swift */; };
-		113BC13A25F015B30076AEDC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC13925F015B30076AEDC /* Event.swift */; };
+		113BC12D25EFF2950076AEDC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* User.swift */; };
 		1145CDE92641CBF90068A784 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDE82641CBF90068A784 /* ProjectMainView.swift */; };
 		1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */; };
 		1145CDF026448BA20068A784 /* ProjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDEF26448BA20068A784 /* ProjectLoader.swift */; };
 		1145CDF42650F7480068A784 /* FeedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDF32650F7480068A784 /* FeedProject.swift */; };
-		11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EF4C25F8106B001075D4 /* TeemView.swift */; };
-		11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */; };
 		11BA6C6D25DEE6AB000E0580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */; };
 		11BA6C7025DEE6AB000E0580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */; };
 		11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C7825DEF84A000E0580 /* EditableText.swift */; };
-		11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA6C7D25DF1337000E0580 /* CodeView.swift */; };
 		11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84325E0641B006EEADC /* TextBindingManager.swift */; };
 		11C7C84825E064A2006EEADC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C84725E064A2006EEADC /* Extension.swift */; };
 		11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */; };
-		11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C87D25E3D869006EEADC /* FeedView.swift */; };
 		11C7C88225E3D87B006EEADC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88125E3D87B006EEADC /* MainView.swift */; };
 		11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */; };
-		11C7C88B25E42DA8006EEADC /* ProjectViewSubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */; };
 		11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */; };
 		11C7C89525E43725006EEADC /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89425E43725006EEADC /* Project.swift */; };
-		11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */; };
 		11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */; };
 		11C7C8AA25E81AE0006EEADC /* ProximaNova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */; };
 		11C7C8AC25E81AE5006EEADC /* ProximaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */; };
@@ -51,48 +43,44 @@
 		11C7C8B025E81B00006EEADC /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A725E81626006EEADC /* ProximaNova-Regular.ttf */; };
 		11C7C8B225E81B04006EEADC /* ProximaNova-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */; };
 		11C7C8B525E823C0006EEADC /* ProximaNova-Extrabld.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */; };
+		11F3E47E26A6F42B00BCE44E /* DesignClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E47D26A6F42B00BCE44E /* DesignClass.swift */; };
+		11F3E48426AD6E5000BCE44E /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E48326AD6E5000BCE44E /* Participant.swift */; };
+		11F3E48A26B205D100BCE44E /* SimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E48926B205D100BCE44E /* SimpleManager.swift */; };
+		11FFAADB26B426D7002C8920 /* ProjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFAADA26B426D7002C8920 /* ProjectAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1113720A2601400000FE9AAA /* FeedInterestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInterestingView.swift; sourceTree = "<group>"; };
 		1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewInteresting.swift; sourceTree = "<group>"; };
-		112CFA282610EE8D005EA034 /* ProjectViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewMain.swift; sourceTree = "<group>"; };
+		1121AF2026B42C0F00799894 /* ProjectViewModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModelAPI.swift; sourceTree = "<group>"; };
+		1121AF2526B54CA100799894 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
+		1121AF2826B559D400799894 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		1121AF2D26B55B2500799894 /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		1121AF3226B5878200799894 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1121AF3526B588A000799894 /* NewsCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCreationView.swift; sourceTree = "<group>"; };
+		1121AF3826B58CA400799894 /* ServerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTestView.swift; sourceTree = "<group>"; };
+		1121AF3C26B5A5FC00799894 /* CreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationView.swift; sourceTree = "<group>"; };
+		1121AF4126B5B57700799894 /* UserCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationView.swift; sourceTree = "<group>"; };
+		1121AF4726B5D9C000799894 /* ProjectCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCreationView.swift; sourceTree = "<group>"; };
 		113497F3261D9B11007AAE96 /* TestSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSystem.swift; sourceTree = "<group>"; };
-		113497FA261DA853007AAE96 /* FeedSubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSubscribeView.swift; sourceTree = "<group>"; };
-		11349801261DA982007AAE96 /* ProjectInterestingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInterestingManager.swift; sourceTree = "<group>"; };
-		11349804261DAA6F007AAE96 /* FeedViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewNew.swift; sourceTree = "<group>"; };
 		113498092620C8A0007AAE96 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1134980C2620C91D007AAE96 /* MainTextInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextInfo.swift; sourceTree = "<group>"; };
-		1134980F2620F11A007AAE96 /* FirstMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMenuView.swift; sourceTree = "<group>"; };
-		113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedView.swift; sourceTree = "<group>"; };
-		113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectFeedManager.swift; sourceTree = "<group>"; };
-		113BC12C25EFF2950076AEDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		113BC12F25EFF3F90076AEDC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		113BC13225EFFBFB0076AEDC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		113BC13625F0137D0076AEDC /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
-		113BC13925F015B30076AEDC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		113BC12C25EFF2950076AEDC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1145CDE82641CBF90068A784 /* ProjectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
 		1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		1145CDEF26448BA20068A784 /* ProjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLoader.swift; sourceTree = "<group>"; };
 		1145CDF32650F7480068A784 /* FeedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProject.swift; sourceTree = "<group>"; };
-		11A6EF4C25F8106B001075D4 /* TeemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeemView.swift; sourceTree = "<group>"; };
 		11BA6C6525DEE6A8000E0580 /* Racketa_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racketa_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BA6C6F25DEE6AB000E0580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11BA6C7125DEE6AB000E0580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BA6C7825DEF84A000E0580 /* EditableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
-		11BA6C7D25DF1337000E0580 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		11C7C84325E0641B006EEADC /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
 		11C7C84725E064A2006EEADC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Racketa_SwiftUIApp.swift; sourceTree = "<group>"; };
-		11C7C87D25E3D869006EEADC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		11C7C88125E3D87B006EEADC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewSubscribe.swift; sourceTree = "<group>"; };
 		11C7C88F25E4332C006EEADC /* RoundedHalfRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHalfRectangle.swift; sourceTree = "<group>"; };
 		11C7C89425E43725006EEADC /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSubscribeManager.swift; sourceTree = "<group>"; };
 		11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
 		11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.ttf"; sourceTree = "<group>"; };
 		11C7C8A425E815FB006EEADC /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
@@ -100,6 +88,10 @@
 		11C7C8A725E81626006EEADC /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
 		11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
 		11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.ttf"; sourceTree = "<group>"; };
+		11F3E47D26A6F42B00BCE44E /* DesignClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignClass.swift; sourceTree = "<group>"; };
+		11F3E48326AD6E5000BCE44E /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		11F3E48926B205D100BCE44E /* SimpleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleManager.swift; sourceTree = "<group>"; };
+		11FFAADA26B426D7002C8920 /* ProjectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,67 +105,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1113720726013F5E00FE9AAA /* old */ = {
+		1121AF3126B586A100799894 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				113BC12C25EFF2950076AEDC /* Person.swift */,
-				113498092620C8A0007AAE96 /* News.swift */,
-				113BC13925F015B30076AEDC /* Event.swift */,
-				1134980C2620C91D007AAE96 /* MainTextInfo.swift */,
-				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
-				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
-				1134980F2620F11A007AAE96 /* FirstMenuView.swift */,
-				113BC13225EFFBFB0076AEDC /* CalendarView.swift */,
-				11C7C88A25E42DA8006EEADC /* ProjectViewSubscribe.swift */,
-				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
-				11C7C87A25E3D7AE006EEADC /* Authorization */,
-				11C7C87C25E3D800006EEADC /* Feed */,
-				11349807261DAA75007AAE96 /* Feed */,
-				113BC12125EFBD420076AEDC /* myProjectFeed */,
+				1121AF2026B42C0F00799894 /* ProjectViewModelAPI.swift */,
+				1121AF2526B54CA100799894 /* PostAPI.swift */,
+				11FFAADA26B426D7002C8920 /* ProjectAPI.swift */,
+				1121AF2D26B55B2500799894 /* PosterImage.swift */,
+				1121AF2826B559D400799894 /* ImageLoader.swift */,
 			);
-			path = old;
+			path = Server;
 			sourceTree = "<group>";
 		};
-		1113720926013FC300FE9AAA /* FeedInteresting */ = {
+		1121AF4026B5B48700799894 /* ServerTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				1113720A2601400000FE9AAA /* FeedInterestingView.swift */,
-				11349801261DA982007AAE96 /* ProjectInterestingManager.swift */,
-				112CFA282610EE8D005EA034 /* ProjectViewMain.swift */,
+				1121AF3826B58CA400799894 /* ServerTestView.swift */,
+				11F3E48926B205D100BCE44E /* SimpleManager.swift */,
+				1121AF3C26B5A5FC00799894 /* CreationView.swift */,
+				1121AF4726B5D9C000799894 /* ProjectCreationView.swift */,
+				1121AF3526B588A000799894 /* NewsCreationView.swift */,
+				1121AF4126B5B57700799894 /* UserCreationView.swift */,
 			);
-			path = FeedInteresting;
-			sourceTree = "<group>";
-		};
-		113497FE261DA8E3007AAE96 /* FeedSubscribe */ = {
-			isa = PBXGroup;
-			children = (
-				113497FA261DA853007AAE96 /* FeedSubscribeView.swift */,
-				11C7C89925E6C0E6006EEADC /* ProjectSubscribeManager.swift */,
-			);
-			path = FeedSubscribe;
-			sourceTree = "<group>";
-		};
-		11349807261DAA75007AAE96 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				11349804261DAA6F007AAE96 /* FeedViewNew.swift */,
-				1113720926013FC300FE9AAA /* FeedInteresting */,
-				113497FE261DA8E3007AAE96 /* FeedSubscribe */,
-			);
-			name = Feed;
-			path = ../Feed;
-			sourceTree = "<group>";
-		};
-		113BC12125EFBD420076AEDC /* myProjectFeed */ = {
-			isa = PBXGroup;
-			children = (
-				113BC12225EFBD980076AEDC /* MyProjectFeedView.swift */,
-				113BC12925EFBEE60076AEDC /* MyProjectFeedManager.swift */,
-				113BC12F25EFF3F90076AEDC /* DetailView.swift */,
-				113BC13625F0137D0076AEDC /* ToDoView.swift */,
-				11A6EF4C25F8106B001075D4 /* TeemView.swift */,
-			);
-			path = myProjectFeed;
+			path = ServerTestApp;
 			sourceTree = "<group>";
 		};
 		113BC12625EFBDA60076AEDC /* ViewModel */ = {
@@ -220,16 +174,17 @@
 		11BA6C6725DEE6A8000E0580 /* Racketa_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1145CDF22650F7020068A784 /* FirstView */,
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
+				1121AF4026B5B48700799894 /* ServerTestApp */,
+				1121AF3126B586A100799894 /* Server */,
+				1145CDF22650F7020068A784 /* FirstView */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
 				1145CDE72641CB1B0068A784 /* SecondView */,
 				11C7C88525E3E7B2006EEADC /* CustomTabBar.swift */,
+				1121AF3226B5878200799894 /* ImagePicker.swift */,
 				11C7C89325E4370C006EEADC /* Model */,
 				113BC12625EFBDA60076AEDC /* ViewModel */,
 				11C7C84725E064A2006EEADC /* Extension.swift */,
-				113497F3261D9B11007AAE96 /* TestSystem.swift */,
-				1113720726013F5E00FE9AAA /* old */,
 				11BA6C6C25DEE6AB000E0580 /* Assets.xcassets */,
 				11BA6C7125DEE6AB000E0580 /* Info.plist */,
 				11C7C8A225E815B8006EEADC /* fonts */,
@@ -246,24 +201,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		11C7C87A25E3D7AE006EEADC /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				11BA6C6A25DEE6A8000E0580 /* AuthorizationView.swift */,
-				11BA6C7D25DF1337000E0580 /* CodeView.swift */,
-				11BA6C7825DEF84A000E0580 /* EditableText.swift */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
-		11C7C87C25E3D800006EEADC /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				11C7C87D25E3D869006EEADC /* FeedView.swift */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
 		11C7C88D25E43305006EEADC /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,8 +212,18 @@
 		11C7C89325E4370C006EEADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				113497F3261D9B11007AAE96 /* TestSystem.swift */,
 				11C7C89425E43725006EEADC /* Project.swift */,
+				113498092620C8A0007AAE96 /* News.swift */,
+				113BC12C25EFF2950076AEDC /* User.swift */,
+				11F3E48326AD6E5000BCE44E /* Participant.swift */,
+				1134980C2620C91D007AAE96 /* MainTextInfo.swift */,
+				11C7C89C25E6C1EF006EEADC /* ProjectManager.swift */,
+				11C7C84325E0641B006EEADC /* TextBindingManager.swift */,
+				1113720E260145E200FE9AAA /* ProjectViewInteresting.swift */,
+				11BA6C7825DEF84A000E0580 /* EditableText.swift */,
 				1145CDEF26448BA20068A784 /* ProjectLoader.swift */,
+				11F3E47D26A6F42B00BCE44E /* DesignClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,42 +316,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C7C87E25E3D869006EEADC /* FeedView.swift in Sources */,
-				113BC13025EFF3F90076AEDC /* DetailView.swift in Sources */,
+				11F3E47E26A6F42B00BCE44E /* DesignClass.swift in Sources */,
 				1134980D2620C91D007AAE96 /* MainTextInfo.swift in Sources */,
-				113BC12A25EFBEE60076AEDC /* MyProjectFeedManager.swift in Sources */,
+				11F3E48A26B205D100BCE44E /* SimpleManager.swift in Sources */,
+				1121AF3326B5878200799894 /* ImagePicker.swift in Sources */,
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
 				1145CDF026448BA20068A784 /* ProjectLoader.swift in Sources */,
-				11349805261DAA6F007AAE96 /* FeedViewNew.swift in Sources */,
 				1145CDF42650F7480068A784 /* FeedProject.swift in Sources */,
-				113498102620F11A007AAE96 /* FirstMenuView.swift in Sources */,
-				11C7C88B25E42DA8006EEADC /* ProjectViewSubscribe.swift in Sources */,
+				1121AF2126B42C0F00799894 /* ProjectViewModelAPI.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
-				11C7C89A25E6C0E6006EEADC /* ProjectSubscribeManager.swift in Sources */,
+				1121AF2626B54CA100799894 /* PostAPI.swift in Sources */,
 				11C7C89D25E6C1EF006EEADC /* ProjectManager.swift in Sources */,
-				1113720B2601400000FE9AAA /* FeedInterestingView.swift in Sources */,
+				1121AF3D26B5A5FC00799894 /* CreationView.swift in Sources */,
 				1145CDE92641CBF90068A784 /* ProjectMainView.swift in Sources */,
-				11BA6C6B25DEE6A8000E0580 /* AuthorizationView.swift in Sources */,
 				11C7C88625E3E7B2006EEADC /* CustomTabBar.swift in Sources */,
 				1113720F260145E200FE9AAA /* ProjectViewInteresting.swift in Sources */,
 				11BA6C7925DEF84A000E0580 /* EditableText.swift in Sources */,
-				113497FB261DA853007AAE96 /* FeedSubscribeView.swift in Sources */,
+				1121AF4226B5B57700799894 /* UserCreationView.swift in Sources */,
+				1121AF3626B588A000799894 /* NewsCreationView.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
-				113BC13325EFFBFB0076AEDC /* CalendarView.swift in Sources */,
-				11349802261DA982007AAE96 /* ProjectInterestingManager.swift in Sources */,
 				1134980A2620C8A0007AAE96 /* News.swift in Sources */,
+				1121AF3926B58CA400799894 /* ServerTestView.swift in Sources */,
 				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
-				113BC13725F0137D0076AEDC /* ToDoView.swift in Sources */,
-				11BA6C7E25DF1337000E0580 /* CodeView.swift in Sources */,
+				1121AF2926B559D400799894 /* ImageLoader.swift in Sources */,
+				1121AF2E26B55B2500799894 /* PosterImage.swift in Sources */,
 				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
+				11FFAADB26B426D7002C8920 /* ProjectAPI.swift in Sources */,
 				1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */,
-				11A6EF4D25F8106B001075D4 /* TeemView.swift in Sources */,
-				113BC12D25EFF2950076AEDC /* Person.swift in Sources */,
+				1121AF4826B5D9C000799894 /* ProjectCreationView.swift in Sources */,
+				113BC12D25EFF2950076AEDC /* User.swift in Sources */,
+				11F3E48426AD6E5000BCE44E /* Participant.swift in Sources */,
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,
-				113BC13A25F015B30076AEDC /* Event.swift in Sources */,
-				112CFA292610EE8D005EA034 /* ProjectViewMain.swift in Sources */,
 				113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */,
-				113BC12325EFBD980076AEDC /* MyProjectFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

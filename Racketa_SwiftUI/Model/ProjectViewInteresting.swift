@@ -24,7 +24,7 @@ struct ProjectViewInteresting: View {
         GeometryReader { geometry in
             ZStack(alignment: .bottom) {
                 VStack {
-                    Image(project.imageName)
+                    Image(project.pictures)
                         .resizable()
                         .scaledToFill()
                         .frame(width: width, height: imageHeight, alignment: .top)
@@ -39,7 +39,7 @@ struct ProjectViewInteresting: View {
                             rotationDegree: 0, backgroundColor: .white, shadow: true)
                             .frame(height: geometry.size.height - imageHeight + 20, alignment: .bottom)
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(project.name)
+                            Text(project.title)
                                 .font(Font.custom("ProximaNova-Extrabld", size: 24))
                                 .lineLimit(2)
                                 .padding(.top, 11)
@@ -54,17 +54,7 @@ struct ProjectViewInteresting: View {
                             Spacer()
                             
                             HStack() {
-                                Text(project.mainTag)
-                                    .font(Font.custom(fontName, size: 14))
-                                    .bold()
-                                    .foregroundColor(.white)
-                                    .frame(width: buttonSize.width, height: buttonSize.height)
-                                    .background(Color.black)
-                                    .cornerRadius(corner)
-                                
-                                Spacer()
-                                
-                                Text(project.town)
+                                Text(project.city)
                                     .font(Font.custom(fontName, size: 14))
                                     .bold()
                                     .frame(width: buttonSize.width, height: buttonSize.height)

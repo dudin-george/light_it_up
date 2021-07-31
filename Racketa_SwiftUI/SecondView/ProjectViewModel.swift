@@ -11,7 +11,6 @@ struct ProjectViewModel: View {
     
     private let cornerRadius: CGFloat = 26
     var project = TestSystem.TestProject
-    private let fontName: String = "Proxima Nova"
     
     var body: some View {
         GeometryReader { geometry in
@@ -24,7 +23,7 @@ struct ProjectViewModel: View {
                                 Spacer()
                                 Text(project.description)
                                     .lineLimit(3)
-                                    .font(Font.custom("ProximaNova-Extrabld", size: 18))
+                                    .font(Font.custom(DesignClass.fontNameBold, size: 18))
                                     .foregroundColor(.white)
                                     .padding(.bottom, 20)
                                 HStack(spacing: 20) {
@@ -51,8 +50,8 @@ struct ProjectViewModel: View {
                             .shadow(color: Color.init(#colorLiteral(red: 0.6990006345, green: 0.6990006345, blue: 0.6990006345, alpha: 0.5)), radius: 2, x: 0, y: 1)
                         HStack(alignment: .bottom) {
                             VStack(alignment: .leading) {
-                                Text(project.name)
-                                    .font(Font.custom("ProximaNova-Extrabld", size: 24))
+                                Text(project.title)
+                                    .font(Font.custom(DesignClass.fontNameBold, size: 24))
                                 Spacer()
                             }
                             .padding()
