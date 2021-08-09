@@ -9,26 +9,28 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var selected = 0
+    @State var selected = 1
     private let viewsTitles = ["Лента", "Проекты", "Профиль"]
+    private let viewsImages = ["feed", "raketa", "profile"]
     
     var body: some View {
         ZStack {
             
             if selected == 0 {
-                FeedProject()
+                NewsView()
             } else if selected == 1 {
-                ProjectMainView()
+                ProjectActionView()
             } else {
                 Text("ThirdView")
             }
             
             VStack {
                 Spacer()
-                CustomTabBar(selected: $selected, titles: viewsTitles, firstColor: .blue, secondColor: .gray)
+                CustomTabBar(selected: $selected, titles: viewsTitles, imageStr: viewsImages, firstColor: .white, secondColor: .gray)
                     .padding()
                     .padding(.horizontal, 32)
-                    .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 93, cornerRadius: 36, rotationDegree: 180, backgroundColor: Color.white, shadow: true).background(Color.clear))
+                    .background(RoundedCorners(tl: 20, tr: 20, bl: 0, br: 0).foregroundColor(.black).ignoresSafeArea())
+                        
             }
         }
     }

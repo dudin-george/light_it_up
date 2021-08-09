@@ -44,8 +44,7 @@ struct ProjectViewModel: View {
                 VStack {
                     Spacer()
                     ZStack(alignment: .bottom) {
-                        RoundedHalfRectangle(
-                            width: geometry.size.width, height: geometry.size.height*0.65 + 26, cornerRadius: cornerRadius, rotationDegree: 0, backgroundColor: .white)
+                        RoundedCorners(tl: 20, tr: 20, bl: 0, br: 0)
                             .frame(width: geometry.size.width, height: geometry.size.height*0.65 + 26)
                             .shadow(color: Color.init(#colorLiteral(red: 0.6990006345, green: 0.6990006345, blue: 0.6990006345, alpha: 0.5)), radius: 2, x: 0, y: 1)
                         HStack(alignment: .bottom) {

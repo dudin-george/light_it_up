@@ -17,6 +17,8 @@ struct News: Identifiable, Decodable {
     var project: Int
     var author: Int
     
+    
+    
     enum CodingKeys: String, CodingKey {
         case id
         case title

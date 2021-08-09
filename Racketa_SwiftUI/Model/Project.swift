@@ -8,6 +8,7 @@
 import Foundation
 
 struct Project: Identifiable, Decodable {
+    
     var id: Int
     var title: String
     var mainIdea: String

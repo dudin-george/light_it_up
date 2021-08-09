@@ -34,10 +34,9 @@ struct ProjectViewInteresting: View {
                 }
                 VStack {
                     ZStack(alignment: .bottom) {
-                        RoundedHalfRectangle(
-                            width: width, height: geometry.size.height - imageHeight + 20, cornerRadius: cornerRadius,
-                            rotationDegree: 0, backgroundColor: .white, shadow: true)
-                            .frame(height: geometry.size.height - imageHeight + 20, alignment: .bottom)
+                        RoundedCorners(tl: 20, tr: 20, bl: 0, br: 0)
+                            .background(Color.blue)
+                            .frame(width: width, height: geometry.size.height - imageHeight + 20, alignment: .bottom)
                         VStack(alignment: .leading, spacing: 6) {
                             Text(project.title)
                                 .font(Font.custom("ProximaNova-Extrabld", size: 24))

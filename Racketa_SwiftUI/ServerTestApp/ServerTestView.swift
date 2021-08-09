@@ -24,10 +24,10 @@ struct ServerTestView: View {
             
             VStack {
                 Spacer()
-                CustomTabBar(selected: $selected, titles: viewsTitles, firstColor: .blue, secondColor: .gray)
+                CustomTabBar(selected: $selected, titles: viewsTitles, imageStr: ["", "", ""], firstColor: .blue, secondColor: .gray)
                     .padding()
                     .padding(.horizontal, 32)
-                    .background(RoundedHalfRectangle(width: UIScreen.main.bounds.width, height: 93, cornerRadius: 36, rotationDegree: 180, backgroundColor: Color.white, shadow: true).background(Color.clear))
+                    
             }
         }
     }

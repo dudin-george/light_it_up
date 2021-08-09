@@ -12,9 +12,9 @@ struct UserCreationView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image: UIImage = UIImage(named: "testing")!
     
-    @State private var name = ""
-    @State private var surname = ""
-    @State private var phone = ""
+    @State private var name = "Al"
+    @State private var surname = "Og"
+    @State private var phone = "89184168412"
     @State private var birthday: Date = Date()
     
     var body: some View {

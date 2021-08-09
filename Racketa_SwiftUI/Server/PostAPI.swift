@@ -36,19 +36,21 @@ class PostAPI {
     private func generateBody(boundary: String, parameters: [String: Any],
                               image: UIImage, fileName: String, imageParametr: String) -> Data {
         var data = Data()
-        
-        for (key, value) in parameters {
-            print("Ser ", key, value)
-            data.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
+        let parameter_values = ["phone", "name", "surname", "birthday", "country", "city",
+                                "profession", "tags", "languages", "education", "portfolio", "description"]
+        for key in parameter_values {
+            let value = parameters[key]!
+            print(key, value)
+            data.append("--\(boundary)\r\n".data(using: .utf8)!)
             data.append("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n".data(using: .utf8)!)
             data.append("\(value)\r\n".data(using: .utf8)!)
         }
+        print(String(data: data, encoding: .utf8.self))
         data.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
         data.append("Content-Disposition: form-data; name=\"\(imageParametr)\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
         data.append("Content-Type: image/png\r\n\r\n".data(using: .utf8)!)
         data.append(image.pngData()!)
         data.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
-        
         return data
     }
     

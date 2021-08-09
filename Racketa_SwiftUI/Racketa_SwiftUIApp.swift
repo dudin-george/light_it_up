@@ -11,8 +11,9 @@ import SwiftUI
 struct Racketa_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            //MainView()
-            ServerTestView()
+            MainView()
+            //ServerTestView()
+            //AnimateDemo()
         }
     }
 }
