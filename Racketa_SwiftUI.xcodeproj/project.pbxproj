@@ -28,7 +28,7 @@
 		1145CDF42650F7480068A784 /* FeedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDF32650F7480068A784 /* FeedProject.swift */; };
 		11ABC42326BC56E000E71E29 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42226BC56E000E71E29 /* NewsView.swift */; };
 		11ABC42626BC776200E71E29 /* GlobalNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42526BC776200E71E29 /* GlobalNews.swift */; };
-		11ABC42A26BD409200E71E29 /* GlobalNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42926BD409200E71E29 /* GlobalNewsView.swift */; };
+		11ABC42A26BD409200E71E29 /* GlobalNewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42926BD409200E71E29 /* GlobalNewsCard.swift */; };
 		11ABC42D26BD414C00E71E29 /* CustomButtonTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42C26BD414C00E71E29 /* CustomButtonTag.swift */; };
 		11ABC43026BDB37D00E71E29 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC42F26BDB37D00E71E29 /* ProjectCardView.swift */; };
 		11ABC43426BDC2AE00E71E29 /* ProjectTinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABC43326BDC2AE00E71E29 /* ProjectTinder.swift */; };
@@ -51,6 +51,9 @@
 		11C7C8B225E81B04006EEADC /* ProximaNova-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8A325E815F3006EEADC /* ProximaNova-Black.ttf */; };
 		11C7C8B525E823C0006EEADC /* ProximaNova-Extrabld.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */; };
 		11E1736F26C10C09008F96CA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1736E26C10C08008F96CA /* TestView.swift */; };
+		11E1737226C318BB008F96CA /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1737126C318BA008F96CA /* UserProfileView.swift */; };
+		11E1737626C31BB1008F96CA /* UserProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1737526C31BB1008F96CA /* UserProfileCard.swift */; };
+		11E1737C26C3221E008F96CA /* CustomButtonUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1737B26C3221E008F96CA /* CustomButtonUrl.swift */; };
 		11F3E47E26A6F42B00BCE44E /* DesignClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E47D26A6F42B00BCE44E /* DesignClass.swift */; };
 		11F3E48426AD6E5000BCE44E /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E48326AD6E5000BCE44E /* Participant.swift */; };
 		11F3E48A26B205D100BCE44E /* SimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3E48926B205D100BCE44E /* SimpleManager.swift */; };
@@ -79,7 +82,7 @@
 		1145CDF32650F7480068A784 /* FeedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProject.swift; sourceTree = "<group>"; };
 		11ABC42226BC56E000E71E29 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		11ABC42526BC776200E71E29 /* GlobalNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNews.swift; sourceTree = "<group>"; };
-		11ABC42926BD409200E71E29 /* GlobalNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNewsView.swift; sourceTree = "<group>"; };
+		11ABC42926BD409200E71E29 /* GlobalNewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNewsCard.swift; sourceTree = "<group>"; };
 		11ABC42C26BD414C00E71E29 /* CustomButtonTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTag.swift; sourceTree = "<group>"; };
 		11ABC42F26BDB37D00E71E29 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 		11ABC43326BDC2AE00E71E29 /* ProjectTinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTinder.swift; sourceTree = "<group>"; };
@@ -104,6 +107,9 @@
 		11C7C8A825E8162D006EEADC /* ProximaNova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.ttf"; sourceTree = "<group>"; };
 		11C7C8B425E823C0006EEADC /* ProximaNova-Extrabld.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.ttf"; sourceTree = "<group>"; };
 		11E1736E26C10C08008F96CA /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		11E1737126C318BA008F96CA /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		11E1737526C31BB1008F96CA /* UserProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCard.swift; sourceTree = "<group>"; };
+		11E1737B26C3221E008F96CA /* CustomButtonUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonUrl.swift; sourceTree = "<group>"; };
 		11F3E47D26A6F42B00BCE44E /* DesignClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignClass.swift; sourceTree = "<group>"; };
 		11F3E48326AD6E5000BCE44E /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		11F3E48926B205D100BCE44E /* SimpleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleManager.swift; sourceTree = "<group>"; };
@@ -150,8 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				11C7C88D25E43305006EEADC /* Shapes */,
+				11E1737526C31BB1008F96CA /* UserProfileCard.swift */,
 				11ABC42F26BDB37D00E71E29 /* ProjectCardView.swift */,
-				11ABC42926BD409200E71E29 /* GlobalNewsView.swift */,
+				11ABC42926BD409200E71E29 /* GlobalNewsCard.swift */,
+				11E1737B26C3221E008F96CA /* CustomButtonUrl.swift */,
 				11ABC42C26BD414C00E71E29 /* CustomButtonTag.swift */,
 			);
 			path = ViewModel;
@@ -195,6 +203,7 @@
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
+				11E1737126C318BA008F96CA /* UserProfileView.swift */,
 				11ABC43826BDEF5D00E71E29 /* ProjectActionView.swift */,
 				11ABC43326BDC2AE00E71E29 /* ProjectTinder.swift */,
 				11ABC42226BC56E000E71E29 /* NewsView.swift */,
@@ -349,7 +358,7 @@
 				11C7C88225E3D87B006EEADC /* MainView.swift in Sources */,
 				1145CDF026448BA20068A784 /* ProjectLoader.swift in Sources */,
 				1145CDF42650F7480068A784 /* FeedProject.swift in Sources */,
-				11ABC42A26BD409200E71E29 /* GlobalNewsView.swift in Sources */,
+				11ABC42A26BD409200E71E29 /* GlobalNewsCard.swift in Sources */,
 				1121AF2126B42C0F00799894 /* ProjectViewModelAPI.swift in Sources */,
 				11C7C84825E064A2006EEADC /* Extension.swift in Sources */,
 				1121AF2626B54CA100799894 /* PostAPI.swift in Sources */,
@@ -364,6 +373,7 @@
 				1121AF4226B5B57700799894 /* UserCreationView.swift in Sources */,
 				1121AF3626B588A000799894 /* NewsCreationView.swift in Sources */,
 				11C7C87725E065EB006EEADC /* Racketa_SwiftUIApp.swift in Sources */,
+				11E1737626C31BB1008F96CA /* UserProfileCard.swift in Sources */,
 				1134980A2620C8A0007AAE96 /* News.swift in Sources */,
 				11ABC43026BDB37D00E71E29 /* ProjectCardView.swift in Sources */,
 				1121AF3926B58CA400799894 /* ServerTestView.swift in Sources */,
@@ -372,6 +382,7 @@
 				1121AF2E26B55B2500799894 /* PosterImage.swift in Sources */,
 				11ABC42D26BD414C00E71E29 /* CustomButtonTag.swift in Sources */,
 				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
+				11E1737226C318BB008F96CA /* UserProfileView.swift in Sources */,
 				11FFAADB26B426D7002C8920 /* ProjectAPI.swift in Sources */,
 				1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */,
 				1121AF4826B5D9C000799894 /* ProjectCreationView.swift in Sources */,
@@ -379,6 +390,7 @@
 				11E1736F26C10C09008F96CA /* TestView.swift in Sources */,
 				11F3E48426AD6E5000BCE44E /* Participant.swift in Sources */,
 				11C7C89525E43725006EEADC /* Project.swift in Sources */,
+				11E1737C26C3221E008F96CA /* CustomButtonUrl.swift in Sources */,
 				113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

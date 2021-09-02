@@ -26,7 +26,7 @@ struct NewsView: View {
     private func globalNewsView() -> some View {
         return ScrollView {
             VStack(alignment: .leading){
-                GlobalNewsView(news: globalNews, height: 200)
+                GlobalNewsCard(news: globalNews, height: 200)
                 Text("Рекомендаци для вас")
                     .foregroundColor(.white)
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -42,7 +42,7 @@ struct NewsView: View {
                 ScrollView() {
                     ForEach((0..<10), content: {
                         _ in
-                        GlobalNewsView(news: globalNews, height: 200)
+                        GlobalNewsCard(news: globalNews, height: 200)
                     })
                 }
             }

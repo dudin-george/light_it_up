@@ -18,10 +18,35 @@ struct ProjectTinder: View {
     
     @State private var subscribeOpacity: Double = 0
     @State private var bookmarkOpacity: Double = 0
+    @State private var likeOpacity: Double = 0
+    @State private var dislikeOpacity: Double = 0
+    
     
     var body: some View {
         VStack {
             ZStack {
+                Image("like")
+                    .opacity(likeOpacity)
+                    .onAnimationCompleted(for: likeOpacity) {
+                        if likeOpacity > 0 {
+                            withAnimation(.easeOut(duration: 0.5), {
+                                likeOpacity = 0
+                            })
+                        }
+                    }
+                
+                Image("dislike")
+                    .opacity(dislikeOpacity)
+                    .onAnimationCompleted(for: dislikeOpacity) {
+                        if dislikeOpacity > 0 {
+                            withAnimation(.easeOut(duration: 0.5), {
+                                dislikeOpacity = 0
+                            })
+                        }
+                    }
+            }
+            .frame(width: 30, height: 30)
+            ZStack(alignment: Alignment.top) {
                 ForEach((0..<2)) { i in
                     Rectangle()
                         .foregroundColor(.white)
@@ -29,11 +54,12 @@ struct ProjectTinder: View {
                         .frame(height: UIScreen.main.bounds.height*0.55)
                         .clipShape(RoundedRectangle(cornerRadius: 25))
                         .shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)), radius: 5, y: 4)
-                        .padding()
-                        .padding(.top, CGFloat((2 - i))*20)
+                        .padding(.horizontal)
+                        .padding(.top, CGFloat((2 - i))*13)
                 }
                 projectView()
             }
+            
             ZStack {
                 Text("Вы подписались на обновления проекта")
                     .foregroundColor(.gray)
@@ -66,7 +92,7 @@ struct ProjectTinder: View {
                 .frame(height: UIScreen.main.bounds.height*0.55)
                 .clipShape(RoundedRectangle(cornerRadius: 25))
                 .shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)), radius: 5, y: 4)
-                .padding()
+                .padding(.horizontal)
                 .animation(.easeIn)
                 .rotationEffect(Angle(radians: Double(angle)))
                 .offset(x: dW, y: abs(2 * R * sin(angle) * sin(angle)))
@@ -91,8 +117,14 @@ struct ProjectTinder: View {
                                     self.angle = 0
                                 })
                                 if widthEnd > 0 {
+                                    withAnimation(.easeOut(duration: 0.2), {
+                                        likeOpacity = 1
+                                    })
                                     print("DEBUG: like")
                                 } else {
+                                    withAnimation(.easeOut(duration: 0.2), {
+                                        dislikeOpacity = 1
+                                    })
                                     print("DEBUG: dislike")
                                 }
                             } else {

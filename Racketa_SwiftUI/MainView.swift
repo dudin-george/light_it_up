@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var selected = 1
+    @State var selected = 2
     private let viewsTitles = ["Лента", "Проекты", "Профиль"]
     private let viewsImages = ["feed", "raketa", "profile"]
     
@@ -21,7 +21,7 @@ struct MainView: View {
             } else if selected == 1 {
                 ProjectActionView()
             } else {
-                Text("ThirdView")
+                UserProfileView()
             }
             
             VStack {

@@ -75,16 +75,6 @@ struct ProjectCardView: View {
                                     bookmark.toggle()
                                 }
                             }
-                        //-----
-                        Image("bookmark")
-                            .foregroundColor(.white)
-                            .colorMultiply(color ? .red : .blue)
-                            .onTapGesture {
-                                withAnimation(.easeInOut(duration: 2)) {
-                                    color.toggle()
-                                }
-                        }
-                        //-----
                     }
                     
                     Text(project.mainIdea)

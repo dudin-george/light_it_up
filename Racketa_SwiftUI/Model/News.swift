@@ -50,11 +50,3 @@ struct News: Identifiable, Decodable {
         creationDate = try container.decode(Date.self, forKey: .creation_date)
     }
 }
-
-//struct SomeImage: Codable {
-//    let photo: Data
-//
-//    init(photo: UIImage) {
-//        self.photo = photo.pngData()!
-//    }
-//}

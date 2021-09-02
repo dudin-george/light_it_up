@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GlobalNewsView: View {
+struct GlobalNewsCard: View {
     
     var news: GlobalNews
     var height: CGFloat
