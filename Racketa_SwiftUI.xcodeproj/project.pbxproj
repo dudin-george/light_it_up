@@ -21,6 +21,7 @@
 		113497F4261D9B11007AAE96 /* TestSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113497F3261D9B11007AAE96 /* TestSystem.swift */; };
 		1134980A2620C8A0007AAE96 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113498092620C8A0007AAE96 /* News.swift */; };
 		1134980D2620C91D007AAE96 /* MainTextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134980C2620C91D007AAE96 /* MainTextInfo.swift */; };
+		113595BA26E6798800D8813A /* NewsEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113595B926E6798800D8813A /* NewsEditView.swift */; };
 		113BC12D25EFF2950076AEDC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BC12C25EFF2950076AEDC /* User.swift */; };
 		1145CDE92641CBF90068A784 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDE82641CBF90068A784 /* ProjectMainView.swift */; };
 		1145CDEC2641D2DF0068A784 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */; };
@@ -75,6 +76,7 @@
 		113497F3261D9B11007AAE96 /* TestSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSystem.swift; sourceTree = "<group>"; };
 		113498092620C8A0007AAE96 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1134980C2620C91D007AAE96 /* MainTextInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextInfo.swift; sourceTree = "<group>"; };
+		113595B926E6798800D8813A /* NewsEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEditView.swift; sourceTree = "<group>"; };
 		113BC12C25EFF2950076AEDC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1145CDE82641CBF90068A784 /* ProjectMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
 		1145CDEB2641D2DF0068A784 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				11C7C87625E065EB006EEADC /* Racketa_SwiftUIApp.swift */,
+				113595B926E6798800D8813A /* NewsEditView.swift */,
 				11C7C88125E3D87B006EEADC /* MainView.swift */,
 				11E1737126C318BA008F96CA /* UserProfileView.swift */,
 				11ABC43826BDEF5D00E71E29 /* ProjectActionView.swift */,
@@ -380,6 +383,7 @@
 				11C7C84425E0641B006EEADC /* TextBindingManager.swift in Sources */,
 				1121AF2926B559D400799894 /* ImageLoader.swift in Sources */,
 				1121AF2E26B55B2500799894 /* PosterImage.swift in Sources */,
+				113595BA26E6798800D8813A /* NewsEditView.swift in Sources */,
 				11ABC42D26BD414C00E71E29 /* CustomButtonTag.swift in Sources */,
 				11C7C89025E4332C006EEADC /* RoundedHalfRectangle.swift in Sources */,
 				11E1737226C318BB008F96CA /* UserProfileView.swift in Sources */,
